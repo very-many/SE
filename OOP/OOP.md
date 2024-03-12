@@ -62,6 +62,7 @@ int main(){
 ## Datenkapselung/Geheimnisprinzip
 
 Benutzer sehen / verwenden nur Dinge am rand der Kapsel (Public)
+
 **Public**
 - newAccount
 - deposit

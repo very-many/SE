@@ -4,47 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "5464df288c02f6c4",
+        "id": "6f06f91d2b85d2ad",
         "type": "tabs",
         "children": [
           {
-            "id": "6534cebb2bf96f3a",
+            "id": "0ab867a70f20c61c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "Algo. und Daten./Kap. 1/Algo. und Daten..md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7f4e636928383df2",
+            "id": "a603d92c6c142f6c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP/OOP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "125a246d0f063708",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Disk. Math/Mathe leider.md",
+                "file": "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -64,7 +52,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTimeReverse"
               }
             }
           },
@@ -126,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Disk. Math/Mathe leider.md",
+                "file": "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Disk. Math/Mathe leider.md",
+                "file": "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Disk. Math/Mathe leider.md"
+                "file": "Algo. und Daten./Kap. 1/Das Sortierproblem.md"
               }
             }
           }
@@ -189,11 +177,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "125a246d0f063708",
+  "active": "a603d92c6c142f6c",
   "lastOpenFiles": [
+    "Algo. und Daten./Kap. 1/Algo. und Daten..md",
+    "Algo. und Daten./Kap. 1",
+    "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
+    "Algo. und Daten./Kap. 1/ 1.pdf",
     "OOP/OOP.md",
-    "Disk. Math/Mathe leider.md",
+    "Disk. Math/Thierauf Zahlentheorie.pdf",
+    "Pasted image 20240312101844.png",
+    "Pasted image 20240312102022.png",
+    "Algo. und Daten./ 1",
+    " 1",
+    "Algo. und Daten./7-Zahlentheorie.pdf",
     "Welcome.md",
+    "Algo. und Daten.",
+    "Disk. Math/Mathe leider.md",
     "Disk. Math",
     "OOP",
     "Excalidraw/Drawing 2024-02-22 02.53.40.excalidraw.md",
