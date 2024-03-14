@@ -12,18 +12,23 @@ struct Account{
 
 long nextNumber = 1; //Nächste zu vergebene KOntonummer
 
-struct Account* newAccount (string h){
-	struct Account* a = malloc(sizeof(struct Account));
-
+void* newObject (int n){
+	void* obj = malloc(n);
 	if(a == NULL){
 		printf("Out of Memory\n")
 		exit(1);
 	}
+}
 
-	a->number = nextNumber++;
-	a->holder = h;
-	a->balance = 0;
-	
+void initAccount (struct Account* this, string h){
+	this->number = nextNumber++;
+	this->holder = h;
+	this->balance = 0;
+}
+
+struct Account* newAccount (string h){
+	struct Account* this = newObjet(sizeof(struct Account));
+	initAccount(this, h);
 	return a;
 }
 
@@ -51,9 +56,28 @@ typedef struct Account* Account;
 
 /* ----------------------------- */
 
+struct LimitedAccount {
+struct Account super; //Erben bzw. Übernehmen von Account
+	long limit = 1000; //Limit in Cents. (positiv)
+};
+
+void initLimitedAccount (struct LimitedAccount* this, string h, long l){
+	initAccount((struct Account*)this, h);
+	this->limit = l;
+	
+}
+
+struct LimitedAccount* newLimitedAccount (string h, long l){
+	struct Limited Account* this = newObject(sizeof(struct LimitedAccount);
+	
+}
+
+/* ----------------------------- */
+
 int main(){
 	Account a1 = newAccount("Heinlein");
 	Account a2 = newAccount("Maier");
+	deposit (a1, 1000);
 	printf("%ld %s %ld\n", number(a1), holder(a1), balance(a1)); 
 	
 }

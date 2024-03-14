@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
+                "file": "OOP/OOP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "04fa7a7e35da6c37",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Warsch. und Stat./12.03.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d747d9292ab37547",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Warsch. und Stat./12.03.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -114,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
+                "file": "Warsch. und Stat./12.03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
+                "file": "Warsch. und Stat./12.03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algo. und Daten./Kap. 1/Das Sortierproblem.md"
+                "file": "Warsch. und Stat./12.03.md"
               }
             }
           }
@@ -177,15 +201,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a603d92c6c142f6c",
+  "active": "d747d9292ab37547",
   "lastOpenFiles": [
+    "Pasted image 20240314084840.png",
+    "Warsch. und Stat./Draw - Baumdiagramm.md",
+    "Warsch. und Stat./12.03.md",
+    "Pasted image 20240314084719.png",
+    "Pasted image 20240312101844.png",
+    "Excalidraw/Drawing 2024-03-12 16.47.26.excalidraw.md",
+    "Excalidraw",
+    "OOP/OOP.md",
+    "Warsch. und Stat.",
+    "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
     "Algo. und Daten./Kap. 1/Algo. und Daten..md",
     "Algo. und Daten./Kap. 1",
-    "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
     "Algo. und Daten./Kap. 1/ 1.pdf",
-    "OOP/OOP.md",
     "Disk. Math/Thierauf Zahlentheorie.pdf",
-    "Pasted image 20240312101844.png",
     "Pasted image 20240312102022.png",
     "Algo. und Daten./ 1",
     " 1",
@@ -194,8 +225,6 @@
     "Algo. und Daten.",
     "Disk. Math/Mathe leider.md",
     "Disk. Math",
-    "OOP",
-    "Excalidraw/Drawing 2024-02-22 02.53.40.excalidraw.md",
-    "Excalidraw"
+    "Excalidraw/Drawing 2024-02-22 02.53.40.excalidraw.md"
   ]
 }
