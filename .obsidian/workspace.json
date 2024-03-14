@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo. und Daten./Kap. 1/Algo. und Daten.md",
+                "file": "Warsch. und Stat./12.03.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo. und Daten./Kap. 1/Algo. und Daten.md",
+                "file": "Warsch. und Stat./12.03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo. und Daten./Kap. 1/Algo. und Daten.md",
+                "file": "Warsch. und Stat./12.03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algo. und Daten./Kap. 1/Algo. und Daten.md"
+                "file": "Warsch. und Stat./12.03.md"
               }
             }
           }
@@ -201,8 +201,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d7f8b131eed856af",
+  "active": "d747d9292ab37547",
   "lastOpenFiles": [
+    "Disk. Math/Mathe leider.md",
+    "Algo. und Daten./Kap. 1/Algo. und Daten.md",
     "Algo. und Daten./Kap. 1/1.pdf",
     "Warsch. und Stat./12.03.md",
     "Pasted image 20240314084840.png",
@@ -214,7 +216,6 @@
     "OOP/OOP.md",
     "Warsch. und Stat.",
     "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
-    "Algo. und Daten./Kap. 1/Algo. und Daten.md",
     "Algo. und Daten./Kap. 1",
     "Disk. Math/Thierauf Zahlentheorie.pdf",
     "Pasted image 20240312102022.png",
@@ -223,7 +224,6 @@
     "Algo. und Daten./7-Zahlentheorie.pdf",
     "Welcome.md",
     "Algo. und Daten.",
-    "Disk. Math/Mathe leider.md",
     "Disk. Math",
     "Excalidraw/Drawing 2024-02-22 02.53.40.excalidraw.md"
   ]
