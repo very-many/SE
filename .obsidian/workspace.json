@@ -47,11 +47,10 @@
             "id": "7243a4c8300db98c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "OOP/OOP.md",
-                "mode": "source",
-                "source": false
+                "file": ".obsidian/workspace.json",
+                "staged": false
               }
             }
           }
@@ -138,7 +137,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OOP/OOP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +153,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OOP/OOP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,9 +174,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "OOP/OOP.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -203,13 +198,13 @@
   },
   "active": "7243a4c8300db98c",
   "lastOpenFiles": [
+    "Disk. Math/1. Zahlentheorie.md",
+    "OOP/OOP.md",
     "IT-Recht/Untitled.md",
     "Warsch. und Stat/12.03.md",
-    "Disk. Math/1. Zahlentheorie.md",
     "IT-Recht",
     "Disk. Math/DM_und_LA_01_Zahlentheorie_01_Teilbarkeit.pdf",
     "Disk. Math/Thierauf Zahlentheorie.pdf",
-    "OOP/OOP.md",
     "Algo. und Daten/Kap. 1/Das Sortierproblem.md",
     "Algo. und Daten/Kap. 1/Algo. und Daten.md",
     "Algo. und Daten/Kap. 1/1.pdf",
