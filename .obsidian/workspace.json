@@ -53,9 +53,33 @@
                 "staged": false
               }
             }
+          },
+          {
+            "id": "be6e3dfdedbbb099",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Disk. Math/1. Zahlentheorie.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c608692ecb7a6ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -137,6 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Disk. Math/1. Zahlentheorie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,6 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Disk. Math/1. Zahlentheorie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +200,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Disk. Math/1. Zahlentheorie.md"
+              }
             }
           }
         ],
@@ -196,11 +224,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7243a4c8300db98c",
+  "active": "be6e3dfdedbbb099",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Disk. Math/1. Zahlentheorie.md",
-    "OOP/OOP.md",
     "IT-Recht/Untitled.md",
+    "IT Sicherheit/eits-02-basics.pdf",
+    "IT Sicherheit",
+    "OOP/OOP.md",
     "Warsch. und Stat/12.03.md",
     "IT-Recht",
     "Disk. Math/DM_und_LA_01_Zahlentheorie_01_Teilbarkeit.pdf",
@@ -218,9 +249,7 @@
     "Pasted image 20240312101844.png",
     "Excalidraw/Drawing 2024-03-12 16.47.26.excalidraw.md",
     "Excalidraw",
-    "Warsch. und Stat",
     "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
-    "Algo. und Daten./Kap. 1",
     "Pasted image 20240312102022.png",
     "Welcome.md",
     "Excalidraw/Drawing 2024-02-22 02.53.40.excalidraw.md"
