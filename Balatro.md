@@ -10,7 +10,7 @@
 - [ ] Win in 12 or fewer Rounds
 - [ ] Hand with 4 7 of Clubs
 - [ ] Discard 5 Jacks at the same time
-- [ ] 100 Mill Chips in one Hand
+- [x] 100 Mill Chips in one Hand
 - [ ] Green Legendary 
 
 ### Voucher:
