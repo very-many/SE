@@ -8,66 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a603d92c6c142f6c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OOP/OOP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "04fa7a7e35da6c37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Warsch. und Stat/12.03.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d747d9292ab37547",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7243a4c8300db98c",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": false
-              }
-            }
-          },
-          {
             "id": "be6e3dfdedbbb099",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md",
+                "file": "Welcome.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md",
+                "file": "Welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md",
+                "file": "Welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md"
+                "file": "Welcome.md"
               }
             }
           }
@@ -214,8 +166,8 @@
   },
   "active": "be6e3dfdedbbb099",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Disk. Math/1. Zahlentheorie.md",
+    "conflict-files-obsidian-git.md",
     "IT-Recht/Untitled.md",
     "IT Sicherheit/eits-02-basics.pdf",
     "IT Sicherheit",
