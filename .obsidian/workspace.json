@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "33d8731e4c833a81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Balatro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -101,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md",
+                "file": "Balatro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md",
+                "file": "Balatro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md"
+                "file": "Balatro.md"
               }
             }
           }
@@ -164,16 +177,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a545ed73d69968de",
+  "active": "33d8731e4c833a81",
   "lastOpenFiles": [
+    "Disk. Math/1. Zahlentheorie.md",
+    "Balatro.md",
+    "OOP/OOP1.pdf",
+    "IT-Recht/Untitled.md",
+    "Wdh - Erweiterter Euklid.md",
     "conflict-files-obsidian-git.md",
     "Neues Textdokument.txt",
-    "Disk. Math/1. Zahlentheorie.md",
     "Welcome.md",
-    "Wdh - Erweiterter Euklid.md",
     "OOP/OOP3.pdf",
     "OOP/OOP2.pdf",
-    "OOP/OOP1.pdf",
     "OOP/OOP Kapitel 1 + 2.md",
     "Disk. Math/2024_03_18_DM_und_LA_annotated.pdf",
     "Archive/Pasted image 20240314084840.png",
@@ -181,7 +196,6 @@
     "Archive/Pasted image 20240314084719.png",
     "Archive/Pasted image 20240312101844.png",
     "Archive",
-    "IT-Recht/Untitled.md",
     "IT Sicherheit/eits-02-basics.pdf",
     "IT Sicherheit",
     "OOP/OOP.md",
