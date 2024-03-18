@@ -4,70 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "6f06f91d2b85d2ad",
+        "id": "98fd6fa9f207a817",
         "type": "tabs",
         "children": [
           {
-            "id": "a603d92c6c142f6c",
+            "id": "f0abbef442bf7850",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "OOP/OOP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "04fa7a7e35da6c37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Warsch. und Stat/12.03.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d747d9292ab37547",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7243a4c8300db98c",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": false
-              }
-            }
-          },
-          {
-            "id": "be6e3dfdedbbb099",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md",
-                "mode": "source",
-                "source": false
+                "file": "Archive/Pasted image 20240314084840.png"
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md",
+                "file": "Archive/Pasted image 20240314084840.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md",
+                "file": "Archive/Pasted image 20240314084840.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Disk. Math/1. Zahlentheorie.md"
+                "file": "Archive/Pasted image 20240314084840.png"
               }
             }
           }
@@ -212,34 +162,35 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "be6e3dfdedbbb099",
+  "active": "d7f8b131eed856af",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Disk. Math/1. Zahlentheorie.md",
-    "IT-Recht/Untitled.md",
-    "IT Sicherheit/eits-02-basics.pdf",
-    "IT Sicherheit",
     "OOP/OOP.md",
-    "Warsch. und Stat/12.03.md",
+    "Archive",
+    "OOP/OOP1.pdf",
+    "OOP/OOP2.pdf",
+    "IT Sicherheit/eits-02-basics.pdf",
+    "IT-Recht/Untitled.md",
+    "Disk. Math/1. Zahlentheorie.md",
     "IT-Recht",
-    "Disk. Math/DM_und_LA_01_Zahlentheorie_01_Teilbarkeit.pdf",
+    "IT Sicherheit/Was? wtf nein, also nein hab ich nicht mitbekommen mein ich.md",
     "Disk. Math/Thierauf Zahlentheorie.pdf",
+    "Disk. Math/Mathe leider.md",
+    "Disk. Math/DM_und_LA_01_Zahlentheorie_01_Teilbarkeit.pdf",
+    "Warsch. und Stat/Draw - Baumdiagramm.md",
+    "Warsch. und Stat/12.03.md",
+    "IT Sicherheit",
     "Algo. und Daten/Kap. 1/Das Sortierproblem.md",
     "Algo. und Daten/Kap. 1/Algo. und Daten.md",
     "Algo. und Daten/Kap. 1/1.pdf",
     "Algo. und Daten/Kap. 1",
-    "Algo. und Daten",
     "Algo. und Daten./Kap. 1/Algo. und Daten.md",
-    "Algo. und Daten./Kap. 1/1.pdf",
-    "Pasted image 20240314084840.png",
-    "Warsch. und Stat/Draw - Baumdiagramm.md",
-    "Pasted image 20240314084719.png",
-    "Pasted image 20240312101844.png",
+    "Archive/Pasted image 20240314084840.png",
+    "Archive/Pasted image 20240314084719.png",
+    "Archive/Pasted image 20240312101844.png",
     "Excalidraw/Drawing 2024-03-12 16.47.26.excalidraw.md",
-    "Excalidraw",
     "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
     "Pasted image 20240312102022.png",
-    "Welcome.md",
+    "Archive/Welcome.md",
     "Excalidraw/Drawing 2024-02-22 02.53.40.excalidraw.md"
   ]
 }
