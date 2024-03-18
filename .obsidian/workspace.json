@@ -16,8 +16,21 @@
                 "file": "Disk. Math/2024_03_18_DM_und_LA_annotated.pdf"
               }
             }
+          },
+          {
+            "id": "7d9ad5ce11709feb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wdh - Erweiterter Euklid.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Disk. Math/2024_03_18_DM_und_LA_annotated.pdf",
+                "file": "Wdh - Erweiterter Euklid.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Disk. Math/2024_03_18_DM_und_LA_annotated.pdf",
+                "file": "Wdh - Erweiterter Euklid.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Disk. Math/2024_03_18_DM_und_LA_annotated.pdf"
+                "file": "Wdh - Erweiterter Euklid.md"
               }
             }
           }
@@ -163,10 +176,11 @@
       "handwritten-notes:Create empty handwritten note": false
     }
   },
-  "active": "f0abbef442bf7850",
+  "active": "7d9ad5ce11709feb",
   "lastOpenFiles": [
-    "Disk. Math/2024_03_18_DM_und_LA.pdf",
     "Disk. Math/2024_03_18_DM_und_LA_annotated.pdf",
+    "Wdh - Erweiterter Euklid.md",
+    "Disk. Math/2024_03_18_DM_und_LA.pdf",
     "Disk. Math/2024_03_18_DM_und_LA.xopp~",
     "Disk. Math/DM_und_LA_01_Zahlentheorie_01_Teilbarkeit.pdf",
     "Disk. Math/2024_03_18_DM_und_LA.xopp",
@@ -178,7 +192,6 @@
     "Archive",
     "OOP/OOP1.pdf",
     "OOP/OOP2.pdf",
-    "IT Sicherheit/eits-02-basics.pdf",
     "IT-Recht/Untitled.md",
     "IT Sicherheit/Was? wtf nein, also nein hab ich nicht mitbekommen mein ich.md",
     "Disk. Math/Mathe leider.md",
