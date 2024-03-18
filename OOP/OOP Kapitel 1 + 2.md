@@ -303,3 +303,4 @@ class Test {
 		b.number() + " " + b.holder() + " " + b.balance());
 	}
 }
+```
