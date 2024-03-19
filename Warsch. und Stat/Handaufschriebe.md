@@ -1,3 +1,4 @@
+## %%12.03%%
 **BUCH:** Stochastik für Einsteiger - Norbert Henze (?) - Kap. 7, 8, 9 (KOMBINATORIK)
 
 ***
@@ -28,8 +29,7 @@ Für ein $w\in\Omega$ bezeichnet *Pr[w] die W'keit, dass w das Ergebnis einer Zi
 Formal:
 $$\text{F\"ur alle }w\in\Omega=Pr[w]=\frac{1}{||\Omega||}=\frac{1}{13983816}$$
 
-# 14.03
-
+## %%14.03%%
 ## Def. 1.1
 
 ## Def. 1.2
@@ -121,3 +121,95 @@ $$
 ### Bps:
 $p = 0,75, q = 1-p = 0,25$
 $$Pr[4]=0,25³\cdot0,75\approx 0,0117$$
+--- 
+
+## %%19.03%%
+
+## Satz 2.1 Additionssatz
+**Beweis:**
+Seiten $A,B \subseteq \Omega$ mit $A\cap B=\emptyset$
+$$Pr[A\cup B]=\sum\limits_{w\in A\cup B}$$
+## Satz 2.2
+## Satz 2.3 (Siebformel)
+**Beweis:**
+Seien $A,B\in \Omega$
+[[Draw- A schnitt B]]
+$$Pr[A\cup B] = Pr[A]+Pr[B]-Pr[A\cup B]$$
+	Für $w \in A\cup B$ wurde $Pr[w]$ doppelt addiert
+
+---
+### Nicht Fertig, war irgendeine Frage die beantwortet wurde
+$Pr[A]=A-(A\cap B)\cup (A\cap B)$
+$Pr[B]=B-(A\cap B)\cup (A\cap B)$
+*Additionssatz:*
+$Pr[A\cap B] = Pr[A-(A\cap B)]+Pr[A\cap B]$
+$= Pr[A]+Pr[B]-Pr[A\cap B]$
+---
+
+$A,B,C\in\Omega$
+[[Draw - schnitt A, B, C]]
+$$\begin{align}
+Pr[A\cup B\cup C]=&Pr[A]+Pr[B]+Pr[C] \\
+&-Pr[A\cap B] -Pr[A\cap C]-Pr[B\cap C]\\
+&+Pr[A\cap B\cap C]
+\end{align}$$
+**Beispiel:**
+*Anwendung dieser Formel:*
+![[Pasted image 20240319164038.png]]
+$A_1,A_2,A_3\subseteq\Omega$
+$S\subseteq\{1,2,3\}$
+
+| $S$         | $(-1)^{\|S\|+1}$ | $Pr[\bigcap_{i\subseteq S}A_i]$ |
+| ----------- | ---------------- | ------------------------------- |
+| $\emptyset$ | -1               | $Pr[\emptyset]$                 |
+| {1}         | +1               | $Pr[A_1]$                       |
+| {2}         | +1               | $Pr[A_2]$                       |
+| {3}         | +1               | $Pr[A_3]$                       |
+| {1,2}       | -1               | $Pr[A_1\cap A_2]$               |
+| {2,3}       | -1               | $Pr[A_2\cap A_3]$               |
+| {1,2,3}     | +1               | $Pr[A_{1}\cap A_{2}\cap A_{3}]$ |
+[[Definitionen und Saetze.pdf]](Page 7)
+
+**Beispiel:**
+$\Omega={a,b,c,d,e,f,g}$
+
+| w       | a    | b    | c    | d    | e    | f    | g    |     |
+| ------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | --- |
+| $Pr[w]$ | 17,5 | 13,4 | 13,8 | 12,0 | 15,2 | 17,2 | 10,9 | %   |
+$A=\{a,c,d\}$ $B=\{a,b,c,e\}$ $C=\{a,d,e,g\}$
+
+### Hier Rechnung zur direkten Berechnung einfügen...
+
+*Anwendung der Siebformel:*
+$$\begin{align}
+Pr[A\cup B\cup C]=&Pr[A]+Pr[B]+Pr[C]\\
+&- Pr[A\cap B]-Pr[A\cap C]-Pr[B\cap C] \\
+&+ Pr[A\cap B\cap C]
+\end{align}$$
+$$\begin{align}
+=&Pr[\{a,c,d\}]+Pr[\{a,b,c,e\}]+Pr[\{a,d,e, g\}]\\
+&- Pr[\{a,c\}]-Pr[\{a,d\}]-Pr[\{a,e\}] \\
+&+ Pr[\{a\}]
+\end{align}$$$$\begin{align}
+=&0,433+0,599+0,556 \\
+&- 0,313-0,295-0,327 \\
+&+ 0,175 = 0,828
+\end{align}$$
+**Beispiel:**
+Betrachte das folgende Glücksspiel:
+	Ein fairer Würfel wird 10-mal geworfen.
+	Der Spieler gewinnt, wenn jede der Ziffern $1, 2, 3, 4, 5, 6$ mindestens einmal geworfen wird.
+
+*Frage:* Wie hoch ist die Wahrscheinlichkeit eines Gewinns?
+$\Omega=\{(w_{1},w_{1},\ldots,w_{10}\mid w_{i}\{1,2,\ldots,6\}f.a.i=1,\ldots,10\}$
+$=\{1,2,\ldots,6\}¹⁰$
+
+Für alle $w\in\Omega$: $Pr[w]=\frac$
+
+Gewinn
+$G=\{(w_{1},w_{2},\ldots,w_{10})\in\Omega\mid\{w_{1},w_{2},\ldots,w_{3}\}=\{1,2,\ldots,6\}\}$
+
+*Ziel:* Berechnung der Wahrscheinlichkeit $Pr[G]=\sum\limits{w\in G}Pr[w]=(\frac 1 6)^{10}\cdot||G||$
+*Bemerkung:* Hmm?! Schwierig!
+*Eventuell Einfacher:*$Pr[G]=1-Pr[\overline G]$
+

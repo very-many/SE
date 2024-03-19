@@ -13,24 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP/OOP Kapitel 1 + 2.md",
+                "file": "Warsch. und Stat/Handaufschriebe.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "44be3c086815a8a9",
+        "type": "tabs",
+        "children": [
           {
             "id": "83aee10010ccd5ae",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "OOP/OOP3.pdf"
+                "file": "Warsch. und Stat/Definitionen und Saetze.pdf"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OOP/OOP3.pdf",
+                "file": "Warsch. und Stat/Handaufschriebe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OOP/OOP3.pdf",
+                "file": "Warsch. und Stat/Handaufschriebe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OOP/OOP3.pdf"
+                "file": "Warsch. und Stat/Handaufschriebe.md"
               }
             }
           }
@@ -176,11 +181,21 @@
       "handwritten-notes:Create empty handwritten note": false
     }
   },
-  "active": "83aee10010ccd5ae",
+  "active": "f0abbef442bf7850",
   "lastOpenFiles": [
-    "OOP/OOP Kapitel 3.md",
-    "OOP/OOP3.pdf",
+    "Warsch. und Stat/Definitionen und Saetze.pdf",
+    "Warsch. und Stat/Handaufschriebe.md",
+    "Pasted image 20240319164038.png",
+    "Pasted image 20240319164024.png",
+    "filename.pdf.md",
+    "\"Definitionen.md",
+    "Warsch. und Stat/Draw- A schnitt B.md",
+    "Warsch. und Stat/Draw - Baumdiagramm.md",
+    "Definitionen.md",
+    "Warsch. und Stat/Draw - schnitt A, B, C.md",
     "OOP/OOP Kapitel 1 + 2.md",
+    "OOP/OOP3.pdf",
+    "OOP/OOP Kapitel 3.md",
     "Algo. und Daten/Kap. 1/3 Datenstrukturen.pdf",
     "Algo. und Daten/Kap. 1/Das Sortierproblem.md",
     "Algo. und Daten/Kap. 1/Datenstrukturen.scrvn",
@@ -197,13 +212,10 @@
     "Archive/Pasted image 20240314084840.png",
     "Archive/Pasted image 20240312101844.png",
     "Disk. Math/Selbstlernphase/1. Zahlentheorie.md",
-    "Disk. Math/Selbstlernphase/Thierauf Zahlentheorie.pdf",
     "Disk. Math/Unterricht/Wdh - Erweiterter Euklid.md",
     "Balatro.md",
     "IT Sicherheit/Was? wtf nein, also nein hab ich nicht mitbekommen mein ich.md",
     "Disk. Math/Mathe leider.md",
-    "Warsch. und Stat/Draw - Baumdiagramm.md",
-    "Warsch. und Stat/12.03.md",
     "Algo. und Daten./Kap. 1/Algo. und Daten.md",
     "Excalidraw/Drawing 2024-03-12 16.47.26.excalidraw.md",
     "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
