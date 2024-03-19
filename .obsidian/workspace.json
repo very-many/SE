@@ -16,8 +16,21 @@
                 "currentVersion": "1.5.11"
               }
             }
+          },
+          {
+            "id": "42e2171bd45694b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,6 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,6 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +151,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "conflict-files-obsidian-git.md"
+              }
             }
           }
         ],
@@ -159,31 +176,39 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fdd8d03a43c8a1c8",
+  "active": "42e2171bd45694b8",
   "lastOpenFiles": [
+    "OOP/OOP Kapitel 3.md",
+    "OOP/OOP3.pdf",
+    "conflict-files-obsidian-git.md",
+    "Warsch. und Stat/Handaufschriebe.md",
+    "Warsch. und Stat/Draw- A schnitt B.md",
+    "Warsch. und Stat/Draw - schnitt A, B, C.md",
+    "Warsch. und Stat/Definitionen und Saetze.pdf",
+    "Pasted image 20240319164038.png",
+    "Pasted image 20240319164024.png",
+    "Disk. Math/Unterricht/Wdh - Erweiterter Euklid.md",
+    "Disk. Math/Unterricht/2024_03_18_DM_und_LA_annotated.pdf",
+    "Disk. Math/Unterricht",
+    "Disk. Math/Selbstlernphase/Thierauf Zahlentheorie.pdf",
+    "Disk. Math/Selbstlernphase/DM_und_LA_01_Zahlentheorie_01_Teilbarkeit.pdf",
+    "Disk. Math/Selbstlernphase/1. Zahlentheorie.md",
+    "Disk. Math/Selbstlernphase",
+    "Algo. und Daten/Kap. 1/3 Datenstrukturen.pdf",
+    "Algo. und Daten/Kap. 1/2 Analyse von Algos.pdf",
+    "Algo. und Daten/Kap. 1/1 Grundlagen.pdf",
     "Disk. Math/1. Zahlentheorie.md",
     "Balatro.md",
-    "OOP/OOP1.pdf",
     "IT-Recht/Untitled.md",
     "Wdh - Erweiterter Euklid.md",
-    "conflict-files-obsidian-git.md",
-    "Neues Textdokument.txt",
     "Welcome.md",
-    "OOP/OOP3.pdf",
-    "OOP/OOP2.pdf",
     "OOP/OOP Kapitel 1 + 2.md",
-    "Disk. Math/2024_03_18_DM_und_LA_annotated.pdf",
     "Archive/Pasted image 20240314084840.png",
     "Archive/Welcome.md",
     "Archive/Pasted image 20240314084719.png",
     "Archive/Pasted image 20240312101844.png",
-    "Archive",
-    "IT Sicherheit/eits-02-basics.pdf",
-    "IT Sicherheit",
     "OOP/OOP.md",
     "Warsch. und Stat/12.03.md",
-    "IT-Recht",
-    "Disk. Math/DM_und_LA_01_Zahlentheorie_01_Teilbarkeit.pdf",
     "Algo. und Daten/Kap. 1/Das Sortierproblem.md",
     "Algo. und Daten/Kap. 1/Algo. und Daten.md",
     "Algo. und Daten./Kap. 1/Algo. und Daten.md",

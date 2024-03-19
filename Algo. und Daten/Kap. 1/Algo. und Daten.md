@@ -2,7 +2,7 @@
 **Achtung - VERÄNDERUNG**
 - Arrays beginnen bei 1
 
-**Algo. um den größten gemeinsamen Teiler zu finden**
+*Algo. um den größten gemeinsamen Teiler zu finden:*
 
 ``` Pseudocode
 function GGT(a, b)
@@ -29,5 +29,5 @@ int GGT(int a, int b){
 }
 ```
 # Programmablaufplan
-
+*Für einen Betragsrechner*
 ![[Pasted image 20240312101844.png]]
