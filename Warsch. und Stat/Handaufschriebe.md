@@ -130,7 +130,7 @@ $$Pr[4]=0,25³\cdot0,75\approx 0,0117$$
 Seiten $A,B \subseteq \Omega$ mit $A\cap B=\emptyset$
 $$Pr[A\cup B]=\sum\limits_{w\in A\cup B}$$
 ## Satz 2.2
-## Satz 2.3 (Siebformel)
+## Satz 2.3 Siebformel
 **Beweis:**
 Seien $A,B\in \Omega$
 [[Draw- A schnitt B]]
@@ -155,7 +155,8 @@ Pr[A\cup B\cup C]=&Pr[A]+Pr[B]+Pr[C] \\
 \end{align}$$
 **Beispiel:**
 *Anwendung dieser Formel:*
-![[Pasted image 20240319164038.png]]
+$$\begin{aligned}\textsf{Allgemein: Für }&\geq2\textsf{ Ereignisse }A_1,\ldots,A_n\textsf{ gilt:}\\&\quad Pr\left[A_1\cup\ldots\cup A_n\right]\\&=\sum_{S\subseteq\{1,...,n\}}(-1)^{\|S\|+1}Pr\left[\bigcap_{i\in\mathcal{S}}A_i\right]\end{aligned}$$
+
 $A_1,A_2,A_3\subseteq\Omega$
 $S\subseteq\{1,2,3\}$
 
@@ -234,9 +235,54 @@ V&=A_{\{1\}}\cup A_{\{2\}}\cup A_{\{3\}}\cup A_{\{4\}}\cup A_{\{5\}}\cup A_{\{6\
 &=\bigcup_{i=1}^{A_i}A_{\{i\}}
 \end{align*}$$
 	(Bemerkung {1}=1,...,{i}=i)
-Anwendung der Siebformel:
+*Anwendung der Siebformel:*
 $$\begin{align*}
 Pr[V]&= Pr[\bigcup_{i=1}^{6}A_{\{i\}}]\\
-&= \sum\limits_{T\subseteq\{1,\ldots,6\}}(-1)^{||T||+1}Pt[\bigcap_{i\in T}A_{\{i\}}]
+&= \sum\limits_{T\subseteq\{1,\ldots,6\}}(-1)^{||T||+1}Pt[\bigcap_{i\in T}A_{\{i\}}]\\
+&= \sum\limits_{T:||T||=1}(-1)^{2}Pr[A_{T}]\\
+&+\sum\limits_{T:||T||=2}(-1)^{3}Pr[A_{T}]\\
+&+\sum\limits_{T:||T||=3}(-1)^{4}Pr[A_{T}]\\
+&+\sum\limits_{T:||T||=4}(-1)^{5}Pr[A_{T}]\\
+&+\sum\limits_{T:||T||=5}(-1)^{6}Pr[A_{T}]\\
+&+\sum\limits_{T:||T||=6}(-1)^{7}Pr[A_{T}]\\
+--\\
+&= \sum\limits_{i=1}^{5}\sum\limits_{T:||T||=i}(-1)^{i+1}\Pr[A_{i}]
 \end{align*}$$
+(Bemerkung: $\bigcap\limits_{i\in T}A_{\{i\}}=A_{T}$ und $+\sum\limits_{T:||T||=6}(-1)^{7}Pr[A_{T}] = 0$, da $A_{\{1,2\ldots,6\}}=\emptyset$)
 
+Es gilt:
+$Pr[A_{T}]=(\frac{{6-||T||}}{{6}})^{10}$ (W'keit eine Zahl zu würfeln, die nicht in T enthalten ist)
+$$\begin{align*}
+&\sum\limits_{i=1}^{5}\sum\limits_{T:||T||=i}(-1)^{i+1}\Pr[A_{i}]\\
+&\sum\limits_{i=1}^{5}\sum\limits_{T:||T||=i}(-1)^{i+1}(\frac{6-i}{6})^{10}\\
+&=\sum\limits_{i=1}^{5}(-1)^{i+1}\begin{pmatrix}6\\i\end{pmatrix}(\frac{6-i}{6})^{10}\\
+&\approx0,728188 
+\end{align*}$$
+Somit: $Pr[G]=1-Pr[V]=0,271812$
+
+---
+## Definition 3.1 Bedingte Wahrscheinlichkeiten
+Gegeben sind die Ereignisse $A$ und $B$, wobei $Pr[B]>0$.
+Die *bedingte W'keit* $Pr[A|B]$ von $A$ gegeben $B$ ist definiert durch:
+$$
+Pr\left[A|B\right]=\frac{Pr\left[A\cap B\right]}{Pr\left[B\right]}.
+$$
+**Beispiel:**
+Ein fairer Würfel wird 2x geworfen.
+*Modellierung:*
+- $\Omega=\{1,2,3,\ldots,6\}x\{1,2,3,\ldots,6\}$
+- $Pr[w]=\frac{1}{36}$ für alle $w\in \Omega$
+
+*Ereignis* "Die Würfelsumme ist gleich 8":
+$A=\{(2,6),(3,5),(4,4),(5,3),(6,2)\}$
+$Pr[A]=\frac{5}{36}=\frac{||A||}{||\Omega||}$
+*Ereignis* "Der erste Wurf liefert 3":
+$B=\{(3,1),(3,2),(3,3),(3,4),(3,5),(3,6)\}$
+
+$Pr[B]=\frac{6}{36}=\frac{1}{6}$
+$$\begin{align*}
+Pr[A|B]&{Pr[A\cap B]}/{Pr[B]}\\
+&= \frac{Pr[A\{(3,5)\}]}{Pr[B]}\\
+&= \frac{{\frac{1}{36}}}{\frac{6}{36}}\\
+&= \frac{1}{6}
+\end{align*}$$
