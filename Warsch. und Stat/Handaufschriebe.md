@@ -281,7 +281,7 @@ $B=\{(3,1),(3,2),(3,3),(3,4),(3,5),(3,6)\}$
 
 $Pr[B]=\frac{6}{36}=\frac{1}{6}$
 $$\begin{align*}
-Pr[A|B]&{Pr[A\cap B]}/{Pr[B]}\\
+Pr[A|B]&=\frac{Pr[A\cap B]}{{Pr[B]}}\\
 &= \frac{Pr[A\{(3,5)\}]}{Pr[B]}\\
 &= \frac{{\frac{1}{36}}}{\frac{6}{36}}\\
 &= \frac{1}{6}
