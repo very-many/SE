@@ -4,33 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "907a5f0df56d0d79",
+        "id": "98fd6fa9f207a817",
         "type": "tabs",
         "children": [
           {
-            "id": "fdd8d03a43c8a1c8",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.11"
-              }
-            }
-          },
-          {
-            "id": "42e2171bd45694b8",
+            "id": "f0abbef442bf7850",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Warsch. und Stat/Handaufschriebe.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "44be3c086815a8a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83aee10010ccd5ae",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Warsch. und Stat/Definitionen und Saetze.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Warsch. und Stat/Handaufschriebe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Warsch. und Stat/Handaufschriebe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "Warsch. und Stat/Handaufschriebe.md"
               }
             }
           }
@@ -166,56 +171,54 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "handwritten-notes:Create empty handwritten note": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "handwritten-notes:Create empty handwritten note": false
     }
   },
-  "active": "42e2171bd45694b8",
+  "active": "f0abbef442bf7850",
   "lastOpenFiles": [
-    "OOP/OOP Kapitel 3.md",
-    "OOP/OOP3.pdf",
-    "conflict-files-obsidian-git.md",
+    "Tutorium",
     "Warsch. und Stat/Handaufschriebe.md",
-    "Warsch. und Stat/Draw- A schnitt B.md",
-    "Warsch. und Stat/Draw - schnitt A, B, C.md",
+    "Tutorium/Tutor Planung.md",
+    "Warsch. und Stat/Draw - Baumdiagramm.md",
     "Warsch. und Stat/Definitionen und Saetze.pdf",
+    "Warsch. und Stat/Draw - schnitt A, B, C.md",
     "Pasted image 20240319164038.png",
     "Pasted image 20240319164024.png",
-    "Disk. Math/Unterricht/Wdh - Erweiterter Euklid.md",
-    "Disk. Math/Unterricht/2024_03_18_DM_und_LA_annotated.pdf",
-    "Disk. Math/Unterricht",
-    "Disk. Math/Selbstlernphase/Thierauf Zahlentheorie.pdf",
-    "Disk. Math/Selbstlernphase/DM_und_LA_01_Zahlentheorie_01_Teilbarkeit.pdf",
-    "Disk. Math/Selbstlernphase/1. Zahlentheorie.md",
-    "Disk. Math/Selbstlernphase",
+    "filename.pdf.md",
+    "\"Definitionen.md",
+    "Warsch. und Stat/Draw- A schnitt B.md",
+    "Definitionen.md",
+    "OOP/OOP Kapitel 1 + 2.md",
+    "OOP/OOP3.pdf",
+    "OOP/OOP Kapitel 3.md",
     "Algo. und Daten/Kap. 1/3 Datenstrukturen.pdf",
+    "Algo. und Daten/Kap. 1/Das Sortierproblem.md",
+    "Algo. und Daten/Kap. 1/Datenstrukturen.scrvn",
+    "Algo. und Daten/Kap. 1/Datenstrukturen.scrvn_tmp.m9zomt.part",
     "Algo. und Daten/Kap. 1/2 Analyse von Algos.pdf",
     "Algo. und Daten/Kap. 1/1 Grundlagen.pdf",
-    "Disk. Math/1. Zahlentheorie.md",
-    "Balatro.md",
-    "IT-Recht/Untitled.md",
-    "Wdh - Erweiterter Euklid.md",
-    "Welcome.md",
-    "OOP/OOP Kapitel 1 + 2.md",
-    "Archive/Pasted image 20240314084840.png",
-    "Archive/Welcome.md",
-    "Archive/Pasted image 20240314084719.png",
-    "Archive/Pasted image 20240312101844.png",
-    "OOP/OOP.md",
-    "Warsch. und Stat/12.03.md",
-    "Algo. und Daten/Kap. 1/Das Sortierproblem.md",
+    "Disk. Math/Selbstlernphase/DM_und_LA_01_Zahlentheorie_01_Teilbarkeit.pdf",
     "Algo. und Daten/Kap. 1/Algo. und Daten.md",
+    "Archive/Welcome.md",
+    "IT-Recht/Untitled.md",
+    "IT Sicherheit/eits-02-basics.pdf",
+    "Disk. Math/Unterricht/2024_03_18_DM_und_LA_annotated.pdf",
+    "Archive/Pasted image 20240314084719.png",
+    "Archive/Pasted image 20240314084840.png",
+    "Archive/Pasted image 20240312101844.png",
+    "Disk. Math/Selbstlernphase/1. Zahlentheorie.md",
+    "Disk. Math/Unterricht/Wdh - Erweiterter Euklid.md",
+    "Balatro.md",
+    "IT Sicherheit/Was? wtf nein, also nein hab ich nicht mitbekommen mein ich.md",
+    "Disk. Math/Mathe leider.md",
     "Algo. und Daten./Kap. 1/Algo. und Daten.md",
-    "Pasted image 20240314084840.png",
-    "Warsch. und Stat/Draw - Baumdiagramm.md",
-    "Pasted image 20240314084719.png",
-    "Pasted image 20240312101844.png",
     "Excalidraw/Drawing 2024-03-12 16.47.26.excalidraw.md",
     "Algo. und Daten./Kap. 1/Das Sortierproblem.md",
     "Pasted image 20240312102022.png",
