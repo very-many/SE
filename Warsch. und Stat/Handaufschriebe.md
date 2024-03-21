@@ -209,7 +209,34 @@ Für alle $w\in\Omega$: $Pr[w]=\frac$
 Gewinn
 $G=\{(w_{1},w_{2},\ldots,w_{10})\in\Omega\mid\{w_{1},w_{2},\ldots,w_{3}\}=\{1,2,\ldots,6\}\}$
 
-*Ziel:* Berechnung der Wahrscheinlichkeit $Pr[G]=\sum\limits{w\in G}Pr[w]=(\frac 1 6)^{10}\cdot||G||$
+*Ziel:* Berechnung der Wahrscheinlichkeit $Pr[G]=\sum\limits_{w\in G}Pr[w]=(\frac 1 6)^{10}\cdot||G||$
 *Bemerkung:* Hmm?! Schwierig!
 *Eventuell Einfacher:*$Pr[G]=1-Pr[\overline G]$
+## %%21.03%%
+%%Beispiel geht weiter hier%%
+
+Man verliert, wenn min. eine der Zahlen $1,2,\ldots,6$ nicht gewürfelt wird.
+Formalisierung als "Ausschluss-Ereignis":
+Sei $T \subseteq \{1,2,\ldots,6\}$ Definierte
+$$A_T=\{(w_1,\ldots,w_{10\in}\Omega|\forall i:w_i\in\{1,\ldots6\}-T\}$$
+$A_{T}$ enthält alle Elementarereignisse, bei denen min. die Zahlen in $T$ nicht gewürfelt wurden.
+
+Beispielsweise enthält $A_{\{2,4\}}$ alle Elementarereignisse, bei denen 2 und 4 (und evtl. noch weitere Zahlen) nicht gewürfelt werden.
+
+*Es gilt:*
+- Falls $S\subseteq T, dann A_S\subseteq A_T$
+- $A_{S} \cap A_{T}=A_{S\cup T}$
+das Ereignis $(4,5,6,6,4,6,5,5,4)$ (somit ist $4,5,6\notin T$) ist in $A_{\{1,2,3\}},A_{\{1\}},A_{\{2\}},A_{\{3\}},A_{\{1,2\}},A_{\{2,3\}},A_{\{1,3\}}$ enthalten.
+
+*Verlust:*
+$$\begin{align*}
+V&=A_{\{1\}}\cup A_{\{2\}}\cup A_{\{3\}}\cup A_{\{4\}}\cup A_{\{5\}}\cup A_{\{6\}}\\
+&=\bigcup_{i=1}^{A_i}A_{\{i\}}
+\end{align*}$$
+	(Bemerkung {1}=1,...,{i}=i)
+Anwendung der Siebformel:
+$$\begin{align*}
+Pr[V]&= Pr[\bigcup_{i=1}^{6}A_{\{i\}}]\\
+&= \sum\limits_{T\subseteq\{1,\ldots,6\}}(-1)^{||T||+1}Pt[\bigcap_{i\in T}A_{\{i\}}]
+\end{align*}$$
 

@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "87e2c01687829db1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Warsch. und Stat/Handaufschriebe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "44be3c086815a8a9",
@@ -101,7 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 259.5
   },
   "right": {
     "id": "a212721a342beebf",
@@ -181,23 +194,23 @@
       "handwritten-notes:Create empty handwritten note": false
     }
   },
-  "active": "f0abbef442bf7850",
+  "active": "87e2c01687829db1",
   "lastOpenFiles": [
-    "Tutorium",
+    "OOP/OOP Kapitel 3.md",
+    "Pasted image 20240319164038.png",
     "Warsch. und Stat/Handaufschriebe.md",
+    "Pasted image 20240319164024.png",
+    "OOP/OOP Kapitel 1 + 2.md",
+    "Warsch. und Stat/Definitionen und Saetze.pdf",
+    "Tutorium",
     "Tutorium/Tutor Planung.md",
     "Warsch. und Stat/Draw - Baumdiagramm.md",
-    "Warsch. und Stat/Definitionen und Saetze.pdf",
     "Warsch. und Stat/Draw - schnitt A, B, C.md",
-    "Pasted image 20240319164038.png",
-    "Pasted image 20240319164024.png",
     "filename.pdf.md",
     "\"Definitionen.md",
     "Warsch. und Stat/Draw- A schnitt B.md",
     "Definitionen.md",
-    "OOP/OOP Kapitel 1 + 2.md",
     "OOP/OOP3.pdf",
-    "OOP/OOP Kapitel 3.md",
     "Algo. und Daten/Kap. 1/3 Datenstrukturen.pdf",
     "Algo. und Daten/Kap. 1/Das Sortierproblem.md",
     "Algo. und Daten/Kap. 1/Datenstrukturen.scrvn",
@@ -209,7 +222,6 @@
     "Archive/Welcome.md",
     "IT-Recht/Untitled.md",
     "IT Sicherheit/eits-02-basics.pdf",
-    "Disk. Math/Unterricht/2024_03_18_DM_und_LA_annotated.pdf",
     "Archive/Pasted image 20240314084719.png",
     "Archive/Pasted image 20240314084840.png",
     "Archive/Pasted image 20240312101844.png",
