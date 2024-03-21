@@ -14,7 +14,7 @@
 - [ ] Green Legendary 
 
 ### Voucher:
-- [ ] Invis Voucher (4x)
+- [ ] Invis Voucher (1x)
 - [ ] 17 Playing cards from shop
 
 ### Tags
