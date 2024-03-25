@@ -11,21 +11,19 @@
             "id": "f0abbef442bf7850",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Warsch. und Stat/Handaufschriebe.md",
-                "mode": "source",
-                "source": false
+                "file": "Disk. Math/Unterricht/Eigenaufschrieb.pdf"
               }
             }
           },
           {
-            "id": "87e2c01687829db1",
+            "id": "60922ae2683a40cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP/OOP Kapitel 1 + 2.md",
+                "file": "Disk. Math/Unterricht/GGT Wdh..md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OOP/OOP Kapitel 1 + 2.md",
+                "file": "Disk. Math/Unterricht/GGT Wdh..md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OOP/OOP Kapitel 1 + 2.md",
+                "file": "Disk. Math/Unterricht/GGT Wdh..md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OOP/OOP Kapitel 1 + 2.md"
+                "file": "Disk. Math/Unterricht/GGT Wdh..md"
               }
             }
           }
@@ -178,40 +176,42 @@
       "handwritten-notes:Create empty handwritten note": false
     }
   },
-  "active": "87e2c01687829db1",
+  "active": "60922ae2683a40cb",
   "lastOpenFiles": [
+    "Disk. Math/Unterricht/GGT Wdh..md",
+    "Disk. Math/Unterricht/Eigenaufschrieb.pdf",
+    "Disk. Math/Unterricht/2024_03_25_DM_und_LA.pdf",
+    "Disk. Math/Unterricht/2024_03_18_DM_und_LA_ausgefuellt.pdf",
+    "OOP/OOP3.pdf",
     "OOP/OOP Kapitel 3.md",
+    "Warsch. und Stat/Handaufschriebe.md",
+    "Disk. Math/Unterricht/Wdh - Erweiterter Euklid.md",
+    "Tutorium/Tutor Planung.md",
     "OOP/OOP Kapitel 1 + 2.md",
+    "conflict-files-obsidian-git.md",
     "Balatro.md",
     "Warsch. und Stat/Draw- A schnitt B.md",
     "Warsch. und Stat/Draw - schnitt A, B, C.md",
     "Pasted image 20240319164038.png",
-    "Warsch. und Stat/Handaufschriebe.md",
     "Pasted image 20240319164024.png",
     "Warsch. und Stat/Definitionen und Saetze.pdf",
     "Tutorium",
-    "Tutorium/Tutor Planung.md",
     "Warsch. und Stat/Draw - Baumdiagramm.md",
     "filename.pdf.md",
     "\"Definitionen.md",
     "Definitionen.md",
-    "OOP/OOP3.pdf",
     "Algo. und Daten/Kap. 1/3 Datenstrukturen.pdf",
     "Algo. und Daten/Kap. 1/Das Sortierproblem.md",
     "Algo. und Daten/Kap. 1/Datenstrukturen.scrvn",
     "Algo. und Daten/Kap. 1/Datenstrukturen.scrvn_tmp.m9zomt.part",
     "Algo. und Daten/Kap. 1/2 Analyse von Algos.pdf",
-    "Algo. und Daten/Kap. 1/1 Grundlagen.pdf",
-    "Disk. Math/Selbstlernphase/DM_und_LA_01_Zahlentheorie_01_Teilbarkeit.pdf",
     "Algo. und Daten/Kap. 1/Algo. und Daten.md",
     "Archive/Welcome.md",
     "IT-Recht/Untitled.md",
-    "IT Sicherheit/eits-02-basics.pdf",
     "Archive/Pasted image 20240314084719.png",
     "Archive/Pasted image 20240314084840.png",
     "Archive/Pasted image 20240312101844.png",
     "Disk. Math/Selbstlernphase/1. Zahlentheorie.md",
-    "Disk. Math/Unterricht/Wdh - Erweiterter Euklid.md",
     "IT Sicherheit/Was? wtf nein, also nein hab ich nicht mitbekommen mein ich.md",
     "Disk. Math/Mathe leider.md",
     "Algo. und Daten./Kap. 1/Algo. und Daten.md",

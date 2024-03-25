@@ -493,13 +493,11 @@ struct ChargedAccount {
 
 typedef void* ChargedAccount;
 /* Zieht pro count amount vom Konto ab (als Gebühr).*/
-int charge (struct ChargedAccount* this, long amount) {
-    if (this->count <= 0){
+void charge (struct ChargedAccount* this, long amount) {
+    if (this->count > 0){
+        withdrawAccount((struct Account*)this, this->count*amount);
         this->count = 0;
-        return 0;
     }
-    withdrawAccount((struct Account*)this, this->count*amount);
-    return 0;
 }
 /* Gebühren. Konto this mit Inhaber h */
 /* und anz. Buchungen initialisieren. */
@@ -535,19 +533,48 @@ ChargedAccount newChargedAccount (String h) {
 /* Testprogramm. */
 
 int main(){
-	Account a1 = newAccount("Heinlein");
-	LimitedAccount a2 = newLimitedAccount("Maier", 500);
-    ChargedAccount a3 = newChargedAccount("Müller");
+	Account a1 = newAccount("Karg");
+	LimitedAccount a2 = newLimitedAccount("Richter", 500);
+    ChargedAccount a3 = newChargedAccount("Winker");
 	deposit (a1, 1000);
     deposit (a2, 1000);
-    withdraw(a2, 1000);
+    withdraw(a2, 1500);
     deposit(a3, 1500);
     withdraw(a3, 1000);
     transfer(a3, 100, a2);
-    charge(a3, 100);
+    withdraw(a2, 500);
+    charge(a3, 10);
+    charge(a3, 10);
 	printf("%ld %s %ld\n", number(a1), holder(a1), balance(a1)); 
     printf("%ld %s %ld\n", number(a2), holder(a2), balance(a2)); 
     printf("%ld %s %ld\n", number(a3), holder(a3), balance(a3));
-	
+    return 0;
 }
 ```
+
+# Helo, maybe haben wir Plagiatsvorwurf
+# Er meinte 3 personen haben basically dasselbe
+ich mag ihn eh nixht xD
+die sache ist habe allein gemacht und war genau das gleixhe wie bei euxch 
+
+# Ist halt sus wegen **3** personen
+# Aber is ned schlimm, wenn dann bekommen wir bei dem testat  0% und das wars
+vllt wegen reihenfokge
+Habt ihr dieselbe?
+nicht wirklich ein wenig 
+dann glaub ned
+vllt name abet es muss eigentlich gleich sein
+vllt sind wir es aber glaub ned wir haben reihenfolge ander und programm ein wenig 
+Ja einfach abwarten
+jofrage
+
+kennst du dich aus mit fremdsprachen anmelden
+nö
+# Die anmeldung hat vor 1 Monat gestartet, glaub nicht dass iwo was frei ist
+aber ixch kann einfach rein gehe oder sekre hat gesagt kann rein gehen
+Ja geh einfach rein
+
+
+
+# Yes is can give you, but its bugged rn and i need to do the fixing
+# i hope i've got it fixed by tomorrow

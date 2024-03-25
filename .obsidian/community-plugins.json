@@ -2,6 +2,10 @@
   "obsidian-excalidraw-plugin",
   "quick-latex",
   "handwritten-notes",
+<<<<<<< HEAD
   "obsidian-git",
   "execute-code"
+=======
+  "obsidian-git"
+>>>>>>> origin/master
 ]
