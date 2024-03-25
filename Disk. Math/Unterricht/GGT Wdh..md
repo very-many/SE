@@ -22,3 +22,4 @@ $$\begin{align*}
 &= 3\cdot(6141\cdot(-19)+3243\cdot36)\\
 &= (6141\cdot(-57)+3243\cdot108)
 \end{align*}$$
+-> Ja mit $x=-57$ und $y=108$
