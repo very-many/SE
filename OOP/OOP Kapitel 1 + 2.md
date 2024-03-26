@@ -551,30 +551,3 @@ int main(){
     return 0;
 }
 ```
-
-# Helo, maybe haben wir Plagiatsvorwurf
-# Er meinte 3 personen haben basically dasselbe
-ich mag ihn eh nixht xD
-die sache ist habe allein gemacht und war genau das gleixhe wie bei euxch 
-
-# Ist halt sus wegen **3** personen
-# Aber is ned schlimm, wenn dann bekommen wir bei dem testat  0% und das wars
-vllt wegen reihenfokge
-Habt ihr dieselbe?
-nicht wirklich ein wenig 
-dann glaub ned
-vllt name abet es muss eigentlich gleich sein
-vllt sind wir es aber glaub ned wir haben reihenfolge ander und programm ein wenig 
-Ja einfach abwarten
-jofrage
-
-kennst du dich aus mit fremdsprachen anmelden
-nö
-# Die anmeldung hat vor 1 Monat gestartet, glaub nicht dass iwo was frei ist
-aber ixch kann einfach rein gehe oder sekre hat gesagt kann rein gehen
-Ja geh einfach rein
-
-
-
-# Yes is can give you, but its bugged rn and i need to do the fixing
-# i hope i've got it fixed by tomorrow
