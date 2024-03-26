@@ -21,11 +21,9 @@
             "id": "60922ae2683a40cb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Disk. Math/Unterricht/GGT Wdh..md",
-                "mode": "source",
-                "source": false
+                "file": "Algo. und Daten/Kap. 1/4 Algo Entwurf.pdf"
               }
             }
           }
@@ -112,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Disk. Math/Unterricht/GGT Wdh..md",
+                "file": "Disk. Math/Unterricht/Eigenaufschrieb.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Disk. Math/Unterricht/GGT Wdh..md",
+                "file": "Disk. Math/Unterricht/Eigenaufschrieb.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Disk. Math/Unterricht/GGT Wdh..md"
+                "file": "Disk. Math/Unterricht/Eigenaufschrieb.pdf"
               }
             }
           }
@@ -171,21 +169,24 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "handwritten-notes:Create empty handwritten note": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "60922ae2683a40cb",
+  "active": "d7f8b131eed856af",
   "lastOpenFiles": [
-    "Disk. Math/Unterricht/GGT Wdh..md",
+    "Algo. und Daten/Kap. 1/3 Datenstrukturen.pdf",
+    "Algo. und Daten/Kap. 1/4 Algo Entwurf.pdf",
+    "Algo. und Daten/Kap. 1/4 Algo Entwurf.pdf",
+    "Disk. Math/Unterricht/GGT Wdh. (Euklid).md",
+    "Disk. Math/Selbstlernphase/1. Zahlentheorie.md",
+    "Disk. Math/Unterricht/Wdh - Erweiterter Euklid.md",
     "Disk. Math/Unterricht/Eigenaufschrieb.pdf",
+    "Disk. Math/Unterricht/2024_03_25_DM_und_LA_ausgefuellt_ergaenzt.pdf",
     "Disk. Math/Unterricht/2024_03_25_DM_und_LA.pdf",
     "Disk. Math/Unterricht/2024_03_18_DM_und_LA_ausgefuellt.pdf",
     "OOP/OOP3.pdf",
     "OOP/OOP Kapitel 3.md",
     "Warsch. und Stat/Handaufschriebe.md",
-    "Disk. Math/Unterricht/Wdh - Erweiterter Euklid.md",
     "Tutorium/Tutor Planung.md",
     "OOP/OOP Kapitel 1 + 2.md",
     "conflict-files-obsidian-git.md",
@@ -200,18 +201,14 @@
     "filename.pdf.md",
     "\"Definitionen.md",
     "Definitionen.md",
-    "Algo. und Daten/Kap. 1/3 Datenstrukturen.pdf",
     "Algo. und Daten/Kap. 1/Das Sortierproblem.md",
     "Algo. und Daten/Kap. 1/Datenstrukturen.scrvn",
-    "Algo. und Daten/Kap. 1/Datenstrukturen.scrvn_tmp.m9zomt.part",
-    "Algo. und Daten/Kap. 1/2 Analyse von Algos.pdf",
     "Algo. und Daten/Kap. 1/Algo. und Daten.md",
     "Archive/Welcome.md",
     "IT-Recht/Untitled.md",
     "Archive/Pasted image 20240314084719.png",
     "Archive/Pasted image 20240314084840.png",
     "Archive/Pasted image 20240312101844.png",
-    "Disk. Math/Selbstlernphase/1. Zahlentheorie.md",
     "IT Sicherheit/Was? wtf nein, also nein hab ich nicht mitbekommen mein ich.md",
     "Disk. Math/Mathe leider.md",
     "Algo. und Daten./Kap. 1/Algo. und Daten.md",
