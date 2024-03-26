@@ -288,7 +288,7 @@ Pr[A|B]&=\frac{Pr[A\cap B]}{{Pr[B]}}\\
 &= \frac{{\frac{1}{36}}}{\frac{6}{36}}\\
 &= \frac{1}{6}
 \end{align*}$$
-%%26.03%%
+## %%26.03%%
 ### Eigenschaften von Def. 3.1:
 1. $Pr[B|B]=1$
 2. Für alle $A\subseteq \Omega:Pr[A|\Omega]=Pr[A]$
