@@ -276,13 +276,110 @@ Ein fairer Würfel wird 2x geworfen.
 *Ereignis* "Die Würfelsumme ist gleich 8":
 $A=\{(2,6),(3,5),(4,4),(5,3),(6,2)\}$
 $Pr[A]=\frac{5}{36}=\frac{||A||}{||\Omega||}$
+
 *Ereignis* "Der erste Wurf liefert 3":
 $B=\{(3,1),(3,2),(3,3),(3,4),(3,5),(3,6)\}$
 
 $Pr[B]=\frac{6}{36}=\frac{1}{6}$
+
 $$\begin{align*}
 Pr[A|B]&=\frac{Pr[A\cap B]}{{Pr[B]}}\\
 &= \frac{Pr[A\{(3,5)\}]}{Pr[B]}\\
 &= \frac{{\frac{1}{36}}}{\frac{6}{36}}\\
 &= \frac{1}{6}
+\end{align*}$$
+%%26.03%%
+### Eigenschaften von Def. 3.1:
+1. $Pr[B|B]=1$
+2. Für alle $A\subseteq \Omega:Pr[A|\Omega]=Pr[A]$
+3. Falls $A\cap B=\emptyset$, dann ist $Pr[A|B]=0$
+4. Für alle $B\subseteq \Omega$ mit $Pr[B]>0$ gilt:
+	$(\Omega, Pr[\cdot|B])$ ist ein diskreter Wahrscheinlichkeitsraum.
+
+**Beispiel:** Zweikinderproblem
+Betrachte eine Familie mit zwei Kindern. (keine Zwillinge)
+*Frage:* Wie hoch ist die W'keit, dass beide Kinder Mädchen sind?
+*Modellierung:*
+- $\Omega=\{mm, mj, jm, jj\}$
+- $\forall \omega\in\Omega:Pr[\omega]=\frac{1}{4}$
+
+$A=\{mm\} \rightarrow Pr[A]=\frac{1}{4}$
+*Frage:* Wie hoch ist die W'keit, dass beide Kinder Mädchen sind, unter der Annahme, dass mindestens eines der Kinder ein Mädchen ist?
+$B=\{mh, jm, mm\}$
+$$\begin{align*}\\
+Pr[A|B]&= \frac{Pr[A\cap B]}{Pr[B]}\\
+&=\frac{Pr[\{mm\}]}{\frac{3}{4}}\\
+&= \frac{\frac{1}{4}}{\frac{2}{4}}\\
+&= \frac{1}{3}
+\end{align*}$$
+## Satz 3.5 Multiplikationssatz
+**Beweis:**
+$$\begin{align*}
+&Pr[A_{1}|\Omega]\cdot Pr[A_{2}|A_{1}]\cdot Pr[A_{3}|A_{n}\cap A_{2}]\cdot Pr[A_{n}|A_{1}\cap A_{2}\cap \ldots\cap A_{n-1}]\\
+&= \frac{Pr[A_{1}]}{Pr[\Omega]}\cdot \frac{Pr[A1\cap A2]}{Pr[A1]}\cdot \ldots \cdot\frac{PrA_{1}\cap\ldots\cap A_{n}}{Pr[A_{1}\cap\ldots\cap A_{n-1}]}\\
+
+\end{align*}$$
+*Gekürzt:*
+$$=Pr[A_{1}\cap A_{2}\cap\ldots\cap A_{n}]$$
+
+**Beispiel:** Geburtstagsproblem (boots with the furry nooooooooo)
+*Frage:* Wie hoch ist die W'keit, dass bei einer Gruppe von $m$ Personen min. 2 Personen am selben Tag Geburtstag haben?
+*Annahmen:* 
+- Jeder Tag in $\{1,2,3,\ldots,365\}$ ist gleich wahrscheinlich
+- Schaltjahre werden nicht berücksichtigt (Sind eine lüge)
+- Es gilt: $m\in\{1,2,\ldots,365\}$
+*Modellierung:*
+- $\Omega=\{1,2,3,\ldots,365\}^{m}$
+- $\forall \omega\in \Omega: Pr[\omega]= \frac{1}{||\Omega||}=\frac{1}{365^{m}}$
+
+Mit $D_{j}$, $1\leq j\leq m$, wird das Ereignis bezeichnet, dass die ersten $j$ Personen an verschiedenen Tagen Geboren Geburtstag haben.
+
+| **Geburtstag der Person** | $g_{1}$ | $g_{2}$ | $g_{3}$ | $\ldots$ | $g_{j-1}$ | $g_{j}$ |     | $g_{m}$ |
+| ------------------------- | ------- | ------- | ------- | -------- | --------- | ------- | --- | ------- |
+| **Person**                | $1$     | $2$     | $3$     |          | $j-1$     | $j$     |     | $m$     |
+Alle Personen hat an verschiedenen Tagen Geburtstag genau dann, wenn $g_{i}+g_{j}$ für alle $i+j$gilt.
+
+Element in $D_{j}$:
+
+| *$g_{1}$* | *$g_{2}$* | *$g_{3}$* | *$\ldots$* | *$g_{j-1}$* | *$g_{j}$* | ... | $g_{m}$ |
+| --------- | --------- | --------- | ---------- | ----------- | --------- | --- | ------- |
+*Farbig:* müssen paarweise disjunkt sein
+Nicht Farbig: interessieren nicht!
+
+Es gilt:
+$\Omega=D_{1}\supseteq D_{2}\supseteq D_{3}\supseteq \ldots\supseteq D_{m-1}\supseteq D_{m}$
+$D_{m}=D_{1}\cap D_{2}\cap D_{3}\cap\ldots\cap D_{m}$
+
+$D_{1}$:
+
+| *$g_{1}$* | $g_{2}$ | $g_{3}$ | $\ldots$ | $g_{j-1}$ | $g_{j}$ |     | $g_{m}$ |
+| --------- | ------- | ------- | -------- | --------- | ------- | --- | ------- |
+
+$$\begin{align*}
+Pr[D_{j}|D_{j-1}]&= \fraq{365-(j-1)}{}
+\end{align*}$$
+
+$D_{1}\cap D_{2}\cap D_{3}\cap D_{4}=D_{4}$
+
+*Multiplikationssatz:*
+$$\begin{align*}
+Pr[D_{m}]&=Pr[D_{1}\cap D_{2}\cap\ldots\cap D_{m}]\\
+&= Pr[D_{1}]\cdot Pr[D_{2}|D_{1}]\cdot Pr[D_{3}|D_{1}\cap D_{2}]\\
+&\cdot\ldots \cdot Pr[D_{m}|D_{1}\cap D_{2}\cap\ldots\cap D_{m-1}]\\
+&= Pr[D_{1}]\cdot Pr[D_{2}|D_{1}] \cdot Pr[D_{3}|D_{2}]\\
+&\cdot\ldots \cdot Pr[D_{m}|D_{m-1}]\\
+&= \prod\limits_{j=2}^{m}Pr[D_{j}|D_{j-1}]\\
+&= \prod\limits_{j=2}^{m}\frac{365-(j-1)}{365}\\
+&= \prod\limits_{j=2}^{m-1} \frac{365-j}{365}\\
+&= \prod\limits_{j=2}^{m-1} (1- \frac{j}{365})\\
+&\leq \prod\limits_{j=2}^{m-1} e^{-\frac{j}{365}}\\
+&= e^{\sum\limits\ß}\\
+&= e^{-\frac{1}{365}\sum\limits_{j=1}^{m-1}j}\\
+&= e^{\frac{-1}{365}\frac{m(m-1)}{2}}\\
+&= e^{-\frac{m(m-1)}{730}}
+\end{align*}$$
+$B_{m}$ = Ereignis, dass min. 2 Personen am selben Tag Geburtstag haben.
+$$\begin{align*}
+Pr[B_{m}]&=1-Pr[D_{m}]\\
+&\leq1-e^{-\frac{m(m-1)}{730}}
 \end{align*}$$
