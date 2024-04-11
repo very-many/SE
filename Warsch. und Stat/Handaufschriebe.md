@@ -491,4 +491,19 @@ $Pr[A\cap C]=\frac{3}{36}=\frac{1}{12}=\frac{1}{6}\cdot \frac{1}{2}= Pr[C]\cdot 
 
 -> A, C unabhängig
 
-**Beispiel:** betrachte eine Urne
+**Beispiel:** betrachte eine Urne, die 6 kugeln enthält, die mit 1,2,3,4,5,6 beschriftet sind.
+Zwei Kugeln werden ohne Zurücklegen gezogen.
+
+$\Omega=\{(w_{1},w_{2})\in \{1,2,\ldots,6\} ^{2}|w_{1}\neq w_{2}\}, ||\Omega||=6\cdot5x30 (?)$
+
+*Ereignisse:*
+- A -> "die erste gezogene Kugel ist gerade"
+- B -> "die zweite gezogene Kugel ist gerade"
+
+$Pr[A]=\frac{1}{2}$
+$$\begin{align*}
+Pr[B]&= Pr[B|A]\cdot Pr[A]+Pr[B|!A]\cdot Pr[!A] \text{ (SotW!)}\\
+&= \frac{2}{5}\cdot \frac{1}{2}+ \frac{3}{5} \cdot \frac{1}{2}\\
+&= \frac{1}{2}
+\end{align*}$$
+
