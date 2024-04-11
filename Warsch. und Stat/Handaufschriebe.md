@@ -383,3 +383,112 @@ $$\begin{align*}
 Pr[B_{m}]&=1-Pr[D_{m}]\\
 &\leq1-e^{-\frac{m(m-1)}{730}}
 \end{align*}$$
+%%04.04%%
+Fehlt
+%%11.04%%
+
+## Satz 3.7 Satz der totalen Wahrscheinlichkeit
+
+$Pr\left[B\right]=\sum_{i=1}^nPr\left[B|A_i\right]\cdot Pr\left[A_i\right].$
+
+$Pr[B|A_{i}]\cdot Pr[A_{i}]= Pr[A_{i}\cap B]$
+
+## Satz 3.9 Satz von Bayes
+
+$$\begin{aligned}Pr\left[A_{i}|B\right]&=\quad\frac{Pr\left[B|A_i\right]Pr\left[A_i\right]}{Pr\left[B\right]}\\&=\quad\frac{Pr\left[B|A_i\right]\cdot Pr\left[A_i\right]}{\sum_{j=1}^nPr\left[B|A_j\right]Pr\left[A_j\right]}.\end{aligned}$$
+**Beispiel:** Ärztliche Diagnostik
+
+In der ärztlichen Diagnostik werden häufig Blutuntersuchungen durchgeführt. Oft liefert ein solcher Test ein positives oder negatives Ergebnis. Das Ergebnis ist nicht immer korrekt.
+Man unterscheidet zwei Arten von Fehlern:
+- *False Positive:* Patient gesund, Test positiv
+- *False Negative:* Patient krank, Test negativ
+
+*Ziel:* Bewertung eines solchen Tests mit Hilfe von dem Satz von Bayes.
+
+Angenommen 1% der Bevölkerung leidet an der Krankheit K.
+Die Krankheit kann mit einem Bluttest nachgewiesen werden.
+
+
+**Blutuntersuchung**
+
+|               | positiv | negativ |
+| ------------- | ------- | ------- |
+| Person krank  | 95%     | ==5%==  |
+| Person gesung | *2%*    | 98%     |
+==False Negative==
+*False Positive*
+
+**Frage:** Wie hoch ist die W'keit, dass eine zufällig ausgewählte Person erkrankt ist, wenn bei ihr der Bluttest positiv ausfällt?
+
+*Ereignisse:*
+- K -> "Die Person ist Krank"
+- P -> "Das Ergebnis der Blutuntersuchung ist positiv"
+
+*Es gilt:*
+- $Pr[P|K]=0,95$
+- $Pr[!P|K]=0,05$
+- $Pr[P|!K]=0,02$
+- $Pr[!P|!K]=0,98$
+
+Satz von Bayes:
+
+$$Pr[K|P]=\frac{Pr[P|K]\cdot Pr[K]}{Pr[P]}=*$$
+Einschub / Zwischenrechnung:
+$$\begin{align*}
+Pr[P]&= Pr[P|K]\cdot Pr[K]\cdot Pr[P|!K]\cdot Pr[!K] \text{ |Satz:(3.7 SotW)}\\
+&= 0,95\cdot 0,01+0,02\cdot 0,99\\
+&= 0,0293
+\end{align*}$$
+ 
+$$\begin{align*}
+*&= \frac{0,95\cdot0,01}{0,0293}\\
+&= 0,324232
+\end{align*}$$
+
+*Bisschen neuer Fall:*
+Angenommen eine Person geht zum Arzt. Der Arzt weiß aufgrund seiner langjährigen Berufserfahrung, dass 30% der Menschen mit den beobachteten Symptomen an der Krankheit K leiden. Deshalb ordnet er einen Bluttest an. Dieser ist Positiv.
+
+$$Pr[P]=0,95\cdot0,3+0,02\cdot0,7=0,299$$
+
+$$\begin{align*}
+Pr[K|P]&= \frac{0,95\cdot0,3}{0,299}\\
+&= 0,953177
+\end{align*}$$
+# Unabhängige Ereignisse
+## Def 4.1 Unabhängigkeit
+Die Ereignisse A und B sind unabhängig, falls
+$$Pr[A\cap B]=Pr[A]\cdot Pr[B]$$
+gilt.
+
+A,B unabhängig:
+$$\begin{align*}
+Pr[A|B]&= \frac{Pr[A\cap B]}{Pr[B]}\\
+&= \frac{Pr[A]\cdot Pr[B]}{Pr[B]}\\
+&= Pr[A]
+\end{align*}$$
+Analog: $Pr[A|B]=Pr[A]$ // $Pr[B|A]=Pr[B]$
+
+**Beispiel:** Es werden nacheinander ein roter und ein blauer Würfel geworfen.
+
+Betrachte die folgenden Ereignisse:
+- A -> "Die Augenzahl des roten Würfels ist gerade"
+- B -> "Die Augenzahl der blauen Würfels ist gerade"
+- C -> "Die Augensumme beider Würfel ist gleich 7"
+
+*Es gilt:* $Pr[A]=Pr[B]=\frac{1}{2}$
+
+$A\cap B=\{(2,2),(2,4),(2,6),(4,2),(4,4),(4,6),(6,2),(6,4),(6,6)\}$
+$Pr[A\cap B]=\frac{||A\cap B||}{||\Omega||}=\frac{8}{36}=\frac{1}{4}=\frac{1}{2}\cdot \frac{1}{2}= Pr[A]\cdot Pr[B]$
+$Pr[A|B]=\frac{Pr[A\cap B]}{Pr[B]}=\frac{\frac{1}{4}}{{\frac{1}{2}}}=\frac{1}{2}=Pr[A]$
+$Pr[B|A]=\frac{Pr[A\cap B]}{Pr[A]}=\frac{\frac{1}{4}}{{\frac{1}{2}}}=\frac{1}{2}=Pr[B]$
+
+-> A,B unabhängig
+
+$C=\{(1,6),(2,5)(3,4),(4,3),(5,2),(6,1)\}$
+$A\cap C=\{(2,5),(4,3),(6,1)\}$
+
+$Pr[A\cap C]=\frac{3}{36}=\frac{1}{12}=\frac{1}{6}\cdot \frac{1}{2}= Pr[C]\cdot Pr[A]$
+
+-> A, C unabhängig
+
+**Beispiel:** betrachte eine Urne
