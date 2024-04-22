@@ -508,3 +508,4 @@ Pr[B]&= Pr[B|A]\cdot Pr[A]+Pr[B|\overline A]\cdot Pr[\overline A] \text{ (SotW!)
 \end{align*}$$
 
 ## %%16.04%%
+
