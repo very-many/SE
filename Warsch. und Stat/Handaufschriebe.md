@@ -426,16 +426,16 @@ Die Krankheit kann mit einem Bluttest nachgewiesen werden.
 
 *Es gilt:*
 - $Pr[P|K]=0,95$
-- $Pr[!P|K]=0,05$
-- $Pr[P|!K]=0,02$
-- $Pr[!P|!K]=0,98$
+- $Pr[\overline P|K]=0,05$
+- $Pr[P|\overline K]=0,02$
+- $Pr[\overline P|\overline K]=0,98$
 
 Satz von Bayes:
 
 $$Pr[K|P]=\frac{Pr[P|K]\cdot Pr[K]}{Pr[P]}=*$$
 Einschub / Zwischenrechnung:
 $$\begin{align*}
-Pr[P]&= Pr[P|K]\cdot Pr[K]\cdot Pr[P|!K]\cdot Pr[!K] \text{ |Satz:(3.7 SotW)}\\
+Pr[P]&= Pr[P|K]\cdot Pr[K]\cdot Pr[P|\overline K]\cdot Pr[\overline K] \text{ |Satz:(3.7 SotW)}\\
 &= 0,95\cdot 0,01+0,02\cdot 0,99\\
 &= 0,0293
 \end{align*}$$
@@ -502,7 +502,7 @@ $\Omega=\{(w_{1},w_{2})\in \{1,2,\ldots,6\} ^{2}|w_{1}\neq w_{2}\}, ||\Omega||=6
 
 $Pr[A]=\frac{1}{2}$
 $$\begin{align*}
-Pr[B]&= Pr[B|A]\cdot Pr[A]+Pr[B|!A]\cdot Pr[!A] \text{ (SotW!)}\\
+Pr[B]&= Pr[B|A]\cdot Pr[A]+Pr[B|\overline A]\cdot Pr[\overline A] \text{ (SotW!)}\\
 &= \frac{2}{5}\cdot \frac{1}{2}+ \frac{3}{5} \cdot \frac{1}{2}\\
 &= \frac{1}{2}
 \end{align*}$$
