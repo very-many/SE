@@ -383,9 +383,9 @@ $$\begin{align*}
 Pr[B_{m}]&=1-Pr[D_{m}]\\
 &\leq1-e^{-\frac{m(m-1)}{730}}
 \end{align*}$$
-%%04.04%%
+## %%04.04%%
 Fehlt
-%%11.04%%
+## %%11.04%%
 
 ## Satz 3.7 Satz der totalen Wahrscheinlichkeit
 
@@ -507,3 +507,4 @@ Pr[B]&= Pr[B|A]\cdot Pr[A]+Pr[B|!A]\cdot Pr[!A] \text{ (SotW!)}\\
 &= \frac{1}{2}
 \end{align*}$$
 
+## %%16.04%%
