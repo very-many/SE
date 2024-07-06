@@ -428,3 +428,28 @@ Welche Arten von Malware nach Zweck sind ihnen bekannt?
 	- Verschlüsselt Daten und erpresst Lösegeld für Schlüssel
 
 ## Überwachung Quiz
+Erklären Sie, inwiefern Unternehmen an (staatlicher) Überwachung beteiligt sind.
+- Können verpflichtet werden Daten preis zu geben
+- Können verpflichtet werden Spyware einzubauen
+- Infrastruktur von Unternehmen kann abgehört werden
+
+Nennen Sie zwei Geheimdienste aus verschiedenen Ländern.
+- USA - CIA (Central Intelligence Agency)
+- Deutschland - BND (Bundesnachrichtendienst)
+
+Nennen sie drei Gründe für den Erhalt der Privatsphäre / des Datenschutzes
+1. Gespeicherte Daten können durchsickern und so das Leben von unschuldigen Personen beeinträchtigen oder gefährden.
+2. Jemand der etwas versteckt, muss nichts falsches getan haben. Das Nothing-To-Hide Argument impliziert aber: Wer etwas verheimlicht, hat etwas falsch gemacht. Dadurch werden auch Menschen mit gesetzlich legitimen Geheimnissen in einen Topf mit Kriminellen geworfen.
+3. Etwas das heute gesellschaftlich akzeptiert ist, könnte schon morgen illegal sein.
+4. Geheimnisse sind wichtig für die Identitätsfindung. Um den unterschiedlichen Rollen des Alltags gerecht zu werden, muss jeder selbst entscheiden können, wer was über ihn erfährt.
+5. Wird die Privatsphäre in legaler Weise eingeschränkt, kann diese Rechtsgrundlage später unter anderen Umständen ausgenutzt werden.
+
+Welches Problem könnte durch das Geheimhalten von Schwachstellen durch z. B. einen Staat auftreten?
+- Ein Szenario wie WannaCry: Durch das Geheimhalten der Schwachstelle wurden weltweit Geräte infiziert und somit der Betrieb von Verkehr, Krankenhäusern, Regierungseinrichrungen, etc temporär blockiert.
+
+Welche Schutzmaßnahmen fallen ihnen ein, um sich vor Überwachung zu schützen?
+- Sorgfältige Auswahl von Anbietern
+- Verschlüsselung von Daten und Mails
+- Vorsicht vor Metadaten
+- Anonymisierung
+- Geräte verantwortungsvoll einsetzen
