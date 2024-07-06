@@ -184,3 +184,85 @@ Welche Eigenschafen weißen kryptographische Hash Funktionen auf?
 - Einwegsfunktion
 - Kollisionsresistent
 
+Erkläre die Begriffe pre-image Resistance, Second pre-image resistance und Kollisionsresistenz.
+- pre-image Resistance:
+	- Es muss schwierig sein, eine Nachricht zu finden, die einen bestimmten Hash h ergibt.
+- Second pre-image resistance:
+	- Es muss schwierig sein, eine Nachricht zu finden, die denselben Hash ergibt wie eine Nachicht m.
+- Kollisionsresistenz:
+	- Es muss schwierig sein zwei Nachrichten zu finden, die denselben Hash ergeben.
+
+Welches der Schutzziele gewährleistet der richtige Einsatz eines Hashes?
+- Integrität
+
+Welche Anwendungsfälle gibt es für Hashes?
+- Verifizierung der Integrität von Daten
+- Digitale Signaturen
+- Passwort Verifikation
+
+Was unterscheidet einen MAC von einem Hash?
+- Ein MAC kann zur Authentisierung einer Nachricht verwendet werden. Dafür wird ein geteiltes Geheimnis genutzt.
+- Er ermöglicht genau wie ein Hash die Überprüfung der Integrität einer Nachricht.
+
+Welcher Modus ist für MACs einzusetzen?
+- encrypt-**then**-mac
+
+Wie sollten Passwörter in Datenbanken gespeichert werden?
+- Es sollte ein Passwort Hash gespeichert werden, um die Vertraulichkeit des Passworts zu gewährleisten.
+- Um vor Rainbow Tables zu schützen, sollte ein Salt für die Erzeugung des Hashes genutzt werden.
+- Es sollte ein langsames Hashing Verfahren genutzt werden, welches mehrere Runden durchläuft. Die Anzahl der Runden muss ebenfalls gespeichert werden.
+- Für besonders schützenswerte Ziele kann ein Pepper genutzt werden, welcher an einer anderen Stelle gespeichert wird (nicht zwingend erforderlich).
+
+- **Hashing and salting** (ypselon.com)
+
+Welche Algorithmen werden für das Hashing von Passwörtern empfohlen?
+- Argon2id
+- bcrypt
+- PBKDF2
+
+Erkläre hybride Angriffe auf Passwörter
+- Hybride Passwortangriffe setzen sich aus Brute Force und Dictionary Angriffen zusammen.
+	- Brute Force (rohe Gewalt) iteriert über mögliche Zeichenkombinationen (oft ohne Regeln).
+	- Dictionary Attacks nutzen Wörterlisten, um Passwörter zu erraten.
+- Hybride Angriffe vereinen beide Verfahren (listenbasierte und regelbasierte Ansätze).
+
+## Signaturen Quiz
+Welche Schutzziele soll eine digitale Signatur gewährleisten?
+- Autenzität
+- Integrität
+- Nicht-/Abstreitbarkeit
+
+Wie verläuft der Prozess der Erstellung und Prüfung einer digitalen Signatur?
+1. Alice erstellt ein Schlüsselpaar und verteilt den öffentlichen schlüssel
+2. Alice hast einen Ciphertext (oder sonstige Daten)
+3. Alice verschlüsselt den Hash mit ihrem private Key
+4. Alive versendet die Daten mitsamt Signatur
+5. Bob entschlüsselt den Hash mit Alice public Key
+6. Bob hasht die Daten und prüft den Hash
+
+Welchen Zweck erfüllt ein Zeitstempel bei der Übertragung von Daten? Wie wird er eingesetzt?
+- Ein Zeitstempel schützt vor Replay-Attacks.
+- Der Timestamp wird an die Nachricht angehängt. Das Paket wird gehashed, signiert und verschlüsselt. Pakete mit wiederverwendeten Zeitstempeln werden verworfen.
+
+## TLS Quiz
+Welche Schutzziele können über TLS durchgesetzt werden?
+- Vertraulichkeit
+- Integrität
+- Authenzität
+
+Was ist SSL?
+- TLS<1.0
+
+Wofür steht TLS und SSL
+- Transport Layer Security
+- Secure Socket Layer
+
+Was wird im TLS Handshake durchgeführt?
+1. Cipher Suit (Schlüsselaustausch, Verschlüsselungsverfahren, Hashfunktion)
+2. Zertifikat (Autentizität)
+3. Generierung eines symmetrischen Schlüssels und DH-Keyexchange (Vertraulichkeit)
+4. MAC über bisherige Kommunikation
+
+Was ist Perfect Forward Secrecy? Wie wird sie gewährleistet?
+- Die Garantie, dass wenn ein Schlüssel einer Verbindung öffentlich wird, die Vertraulichkeit weiterer Kommunikation nicht gefährdet ist.
+- Durch ephemeral (flüchtig) Verfahren sind Schlüssel nur für einen Zeitraum gültig. Seit TLS1.3 ist nur noch ephemeral möglich.
