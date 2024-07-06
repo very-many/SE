@@ -170,4 +170,17 @@ Wie ist RSA definiert?
 - $dec((p,q,d),y)=yd(\mod n)$
 
 Was sind Hybride Kryptosysteme und wie Funktionieren diese?
-1. Hybride Kryptosysteme
+1. Hybride Kryptosysteme vereinen die Vorteile symmetrischer (Geschwindigkeit) und asymmetrischer (sicherer Schlüsselaustausch) miteinander.
+2. 
+	- Alice möchte eine Geheime Nachricht an Bob senden, dafür holt sie sich Bobs öffentlichen Schlüssel
+	- Alice generiert einen zufälligen Session Key zur symmetrischen Verschlüsselung
+	- Alice verschlüsselt die zu sendende Nachricht mit dem Session Key und den Session Key selber mit dem öffentlichen Schlüssel von Bob.
+	- Beides sendet sie an Bob, der den Session Key mithilfe des privaten Schlüssels entschlüsseln kann
+	- Damit kann er auch die geheime Nachricht entschlüsseln.
+
+## Hashing Quiz
+Welche Eigenschafen weißen kryptographische Hash Funktionen auf?
+- Deterministisch
+- Einwegsfunktion
+- Kollisionsresistent
+
