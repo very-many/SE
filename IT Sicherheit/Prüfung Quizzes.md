@@ -31,7 +31,57 @@ Wie könnte der Output des Programms "ls" in die Datei "ls.log" umgeleitet werde
 - ls > ls.log
 - ls 1> ls.log
 
+## Generelles Quiz
+Was deckt die IT-Security ab?
+-  Schutz von Daten vor Zerstörung, Abhören, Manipulation, etc.
 
+Was umfasst Safety im IT Kontext?
+- Die Sicherheit der Verfügbarkeit vin Daten und IT bezogen auf Hardware
+
+Auf welches Recht geht der Datenschutz zurück?
+- Auf das informelle "Schutz des Rechts auf informationelle Selbstbestimmung".
+
+Nenne die 5 Säulen der IT-Sicherheit (vollziehe diese im Kopf nach)
+- **Vertraulichkeit (Confidentiality)**
+	- Daten bleiben geheim, auch wenn eine nicht autorisierte Person darauf zugreifen kann.
+- **Integrität (Integrity)**
+	- Daten können nicht unbemerkt manipuliert werden.
+- **Verfügbarkeit (Availability)**
+	- Daten sind immer dann verfügbar, wenn sie benötigt werden
+- **Nicht-/Abstreitbarkeit (Non-/ Repudiation)**
+	- Es kann entweder nicht oder sicher festgestellt werden, um wessen Daten es sich handelt.
+- **Authentizität (Authenticity)**
+	- Daten wurden wirklich vom angegebenen Urheber erstellt und nicht von jemand anderem.
+
+Erkläre die **CIA** Triade
+- *Confidentiality, Integrity und Availability*
+- Alle drei stehen in einem stetigen Spannungsverhältnis zueinander, d.h. sie können nicht alle gleichzeitig, vollständig erreicht werden.
+
+Nenne eine kryptografische Maßnahme für jedes der Schutzziele der IT-Sicherheit. Welches der Schutzziele kann nicht (direkt) durch kryptografische Maßnahmen erfüllt werden?
+- Vertraulichkeit: Verschlüsselung
+- Integrität: Hash, MAC, Digitale Signatur
+- Verfügbarkeit: X
+- Nicht-/Abstreitbarkeit: Digitale Signatur
+- Authentizität: MAC, Digitale Signatur
+
+Was versteht man unter Open Source Intelligence?
+- Sammeln von Informationen über Unternehmen und Personen durch (halb-)offene Informationsquellen wie Websites, unsichere APIs, etc.
+
+Was versteht man unter Ransomware?
+- Ransomware ist Malware, welche Daten (exfiltriert und) verschlüsselt.
+- Die Daten "sollen nach einer Zahlung wieder entschlüsselt werden".
+
+Angenommen das Unternehmen für das sie Arbeiten wird Ziel einer Ransomware Attacke.
+- Nein
+
+Wofür steht DDOS? Was ist DOS?
+- Distributed Denial of Service ist ein Angriff der nicht wie ein Denial of Service von einer Partei, sondern von mehreren (verteilt) ausgeht. Das Ziel ist es, die Verfügbarkeit eines Dienstes, oder von Daten zu schädigen.
+
+Was ist Phishing?
+- Der Prozess, ein Opfer unter Vortäuschung falscher Umstände zu einer Tat zu bewegen.
+
+Was sind die OWASP Top Ten? In welchen Bereichen sind diese relevant?
+- Die 10 häufigsten Schwachstellen in Web- oder Mobilanwendungen (je nach Liste).
 
 ## Symmetrische Verschlüsselung Quiz
 Womit Befasst sich Steganographie?
@@ -266,3 +316,115 @@ Was wird im TLS Handshake durchgeführt?
 Was ist Perfect Forward Secrecy? Wie wird sie gewährleistet?
 - Die Garantie, dass wenn ein Schlüssel einer Verbindung öffentlich wird, die Vertraulichkeit weiterer Kommunikation nicht gefährdet ist.
 - Durch ephemeral (flüchtig) Verfahren sind Schlüssel nur für einen Zeitraum gültig. Seit TLS1.3 ist nur noch ephemeral möglich.
+
+Was ist eine Public-Key-Infrastructure?
+- Eine PKI soll die Überprüfung von Identitäten im Internet ermöglichen. Dafür wird eine baumförmige Chain of Trust gebildet, in welcher von einer Stelle ultimativen Vertrauens (Root-Certificate Authority) ausgehend nacheinander Zertifikate signiert werden, um Vertrauen in Identitäten zuzusprechen.
+
+Was sind Extended Validation Zertifikate?
+- Extended Validation Zertifikate sind Zertifikate, welche höherer Sicherheitsanforderung bieten. Sie erfordern z.B. Identitätsnachweis und Adresse des Antragstellers und einen Nachweis, dass der Antragsteller Alleiniger eigentümer der Domain ist.
+
+Was kann Kryptographie nicht abwenden?
+- Lesen unverschlüsselter Dokumente
+- Diebstahl von Schlüsselmaterial
+- Datenverlust
+- Unehrliche Empfänger, der geheime Informationen weitergibt
+- Modifizierte Verschlüsselungssoftware, die unbeabsichtigt Schlüssel oder Klartext weitergibt
+
+Was sind DDOS, Spoofing, PITM/MITM, Hijacking?
+- DDOS = Distributed Denial of Service. Ein DDOS ist das Überlasten eines Diensteanbieters durch Zugriffe von verschiedenen Quellen.
+
+- Spoofing ist das Vortäuschen einer Identität, um z. B: Zugriff zu erlangen. Das ist oft eine erste Stufe für weitere Angriffe wie PITM.
+
+- PITM/MITM = Person/Man in the Middle. Hier wird eine Kommunikation über eine/n dritte/n geleitet, um diese im Transit mitzulesen und/oder zu verändern.
+
+- Beim Hijacking wird zusätzlich zum PITM die Identität des Gegenübers eingenommen, wobei dieses Vorher ausgeschaltet worden ist. Es werden also alle drei obigen Angriffe vereint.
+
+## Availability Quiz
+Wie wird die Availability berechnet?
+- $Availability = \frac{Uptime}{Uptime+Downtime}$
+
+Was sind MTTF, MTBF, MTTR?
+- MTTF (mean time to failure)
+- MTBF (mean time between failures)
+- MTTR (mean time to repair)
+
+Was ist die inhärente Verfügbarkeit?
+- $A_{i}= \frac{MTBF}{MTBF+MTTR}$
+- Die Wahrscheinlichkeit dass ein System zu einem bestimmten Zeitpunkt unter idealen Supportbedingungen funktioniert.
+
+Erkläre die Badewannenkurve
+- Viele Fehler (Produktionsfehler) -> Länger kaum Fehler -> nach zu erwartenden Lebenszeit viele Fehler (Hardwareversagen)
+- Entgegenwirken:
+	- Erste Ausfälle provozieren (burn-in) 
+	- Redundante Systeme und Backups
+	- Hardware ausfälle durch proactive Maintenance reduzieren
+
+Erkläre RAIDs
+- Redundant Array of independent disks
+	- Erhöht Verfügbarkeit, Leistung und das wiederherstellen von Daten
+
+Erkläre RAID0
+- Datenblöcke werden abwechselnd auf die Platten geschrieben.
+- Vorteile
+	- n Festplatten = n-mal Speicherplatz
+	- n-mal mehr Leistung
+- Nachteile
+	- Fällt eine aus, sind alle Daten unbrauchbar (1n Verfügbarkeit)
+
+Erkläre RAID1
+- Datenblöcke werden gleichzeitig auf die Platten geschrieben.
+- Vorteile
+	- Doppelte Lesegeschwindigkeit
+	- Doppelte Verfügbarkeit
+- Nachteile
+	- Doppelter Speicherplatz erforderlich
+	- Keine Erhöhung der Schreibgeschwindigkeit
+
+Erkläre RAID2-4
+- Datenblöcke werden gleichzeitig auf die Platten geschrieben.
+- Vorteile
+	- Doppelte Lesegeschwindigkeit
+	- mehr als doppelte Verfügbarkeit (dank Prüfsummen)
+- Nachteile
+	- Dritte Festplatte erhöht nicht die Speicherkapazität
+
+Erkläre RAID5
+- Wie Level 4, jedoch werden die Prüfsummen auf die Festplatten verteilt.
+- Vorteile
+	- Dreifache Lese- und Schreibgeschwindigkeit
+	- mehr als doppelte Verfügbarkeit (dank Prüfsummen)
+	- Nur eine zusätzliche Festplatte erforderlich
+- Nachteile
+	- Keine Rekonstruktion Möglich wenn 2 Festplatten gleichzeitig ausfallen
+
+Erkläre RAID6
+- Es werden zwei unabhängige Prüfsummen berechnet.
+- Vorteile
+	- Rekonstruktion möglich, auch wenn 2 Festplatten gleichzeitig ausfallen
+	- 4-Fache Lesegeschwindigkeit
+- Nachteile
+	- Doppelter Speicherplatz erforderlich und nur 2-fache Schreibleistung
+
+## Internetsicherheit Quiz
+Welche Maßnahmen gibt es, um bestimmte Schutzziele zu erfüllen?
+-  Vertraulichkeit (Confidentiality)
+	- Verschlüsselung von Daten
+	- Verwendung von AE (Authenticated Encryption)
+- Integrität (Integrity)
+	- Verwendung von AE (Authenticated Encryption)
+- Verfügbarkeit (Availability)
+	- Kein Versand Zeitkritischer Informationen
+- Authentizität (Authenticity)
+	- Verwendung digitaler Signaturen
+
+Welche Arten von Malware nach Zweck sind ihnen bekannt?
+- Spyware
+	- Ausspionieren von Daten
+- Adware
+	- Blendet unerwünschte Werbung ein
+- Scareware
+	- Verängstigung/Einschüchterung von Usern
+- Ransomware
+	- Verschlüsselt Daten und erpresst Lösegeld für Schlüssel
+
+## Überwachung Quiz
