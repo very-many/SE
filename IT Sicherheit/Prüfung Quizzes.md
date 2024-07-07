@@ -36,7 +36,7 @@ Was deckt die IT-Security ab?
 -  Schutz von Daten vor Zerstörung, Abhören, Manipulation, etc.
 
 Was umfasst Safety im IT Kontext?
-- Die Sicherheit der Verfügbarkeit vin Daten und IT bezogen auf Hardware
+- Die Sicherheit der Verfügbarkeit von Daten und IT bezogen auf Hardware
 
 Auf welches Recht geht der Datenschutz zurück?
 - Auf das informelle "Schutz des Rechts auf informationelle Selbstbestimmung".
@@ -173,7 +173,7 @@ Von welcher Organisation wurde AES in einem Wettbewerb akzeptiert?
 
 ## Asymmetrische Verschlüsselung Quiz
 Wie werden assymetrische Kryptosysteme genutzt?
-- Zur Ver-/Entschlüsselung wird ein Schlüsselpar verwendet:
+- Zur Ver-/Entschlüsselung wird ein Schlüsselpaar verwendet:
 	- Private Key: Wird vom Besitzer Geheimgehalten
 	- Public Key: Wird öffentlich gemacht
 - Eine Nachricht die mit dem Public Key verschlüsselt wurde kann nur mit dem Private Key wieder entschlüsselt werden und umgekehrt.
@@ -191,8 +191,8 @@ Erkläre das Diffe-Hellmann Verfahren
 3. Bob: Wähle eine zufällige Zahl $b\in Z\cdot p$ berechne $B=g^{b}\mod p$ und schicke B an Alice.
 4. Der Schlüssel ist nun: $B^{a}\mod p = k = A^{b}\mod p$
 
-Was ist eine Public Key Infrastruktur (PIK)?
-- Eine PIK ist die Summe an Hardware, Software, Personen, etc. die benötigt wird um digitale Zertifikate
+Was ist eine Public Key Infrastruktur (PKI)?
+- Eine PKI ist die Summe an Hardware, Software, Personen, etc. die benötigt wird um digitale Zertifikate
 	1. aufzustellen
 	2. zu managen
 	3. zu verteilen
@@ -201,7 +201,7 @@ Was ist eine Public Key Infrastruktur (PIK)?
 Was ist ein digitales Zertifikat?
 - Digitale nachweise einer Identität auf Basis von öffentlichen Schlüsseln. Diese werden von einer oder mehreren anderen vertrauenswürdigen Parteien Signiert.
 
-Was ist eina Web of Trust?
+Was ist ein Web of Trust?
 - Ein Netz nicht hierarchischer, bzw. nicht in Reihe aufeinander vertrauter Zertifikate. Ein Web of Trust wird z.B. bei PGP (Pretty Good Privacy) bzw. GPG (GNU Privacy Guard, ein FOSS PGP) eingesetzt.
 
 Was ist RSA?
