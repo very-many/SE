@@ -40,40 +40,92 @@ Welches Mathe Problem gibts public key kryptographie. (?)
 
 Nenne 2 algorithmischen Schlüssel Tausch Methoden und skizziere 1 davon. 
 
--nenne 2 algorithmischen Schlüssel Tausch Methoden und skizziere 1 davon. 
-
--ist der Befehl rand() sicher? 
+Ist der Befehl rand() sicher? 
 Wenn nein dann nenne Alternative. 
+- rand() ist deterministisch und unsicher (wie fast alle PRNGs der Programmiersprachen)
+- Stromchiffren?!
 
--hashing, was ist hash Funktion und nenne 3 Eigenschaften davon. 
+Hashing, was ist eine hash Funktion und nenne 3 Eigenschaften davon. 
+- Eine hash Funktion transformiert ihre Eingabe in einen „Hash“ fester länge.
+- Deterministisch
+- Einwegsfunktion
+- Kollisionsresistent
 
--was ist kollisionsresistenz?
+Was ist Kollisionsresistenz?
+- Es ist sehr schwer 2 Nachrichten zu finden, die den selben Hash aufweisen
 
--nenne 2 Anwendungsbereiche für hash Funktion. 
+Nenne 2 Anwendungsbereiche für hash Funktion. 
+- Prüfsummen
+- Passwort sicherung
 
--was für eine Grundidee steckt hinter MAC und wofür?
+Was für eine Grundidee steckt hinter MAC und wofür?
+- Sender und Empfänger haben gemeinsamen Schlüssel.
+- Nachricht wird so signiert, dass Empfänger sie validieren kann.
 
--skizziere encrypt then mac. 
+Skizziere encrypt then mac. 
+- Absender:
+- M ----> (Verschlüsselung mit K_enc) ----> C
+C ----> (MAC-Berechnung mit K_mac) ----> T
+Send (C, T) ----> Empfänger
 
--warum darf ein Passwort niemals als plaintext stehen?
+Empfänger:
+Receive (C, T)
+C ----> [MAC-Berechnung mit K_mac] ----> T'
+Vergleiche T und T'
+Wenn T = T' dann
+   C ----> [Entschlüsselung mit K_enc] ----> M
+Ende
+
+Warum darf ein Passwort niemals als plaintext stehen?
 Angreifen möglich warum? 
-Nenne 2 erkennungsmerkmale dazu. 
+Nenne 2 erkennungsmerkmale dazu.
+- Schutz vor Datenleks
+- Unverschlüsselte Übertragung
+- Klartext Passwörter in Datenbank
+- Schutz vor Insider-Bedrohungen
+- Fehlende Zugriffskontrollen
+- Einfacher Datenbankzugriff
+- Verhinderung von Passwort-Reuse-Angeiffen
 
--skizziere digitale Signatur 
+Skizziere digitale Signatur 
+1. Alice erstellt ein Schlüsselpaar und verteilt den öffentlichen schlüssel
+2. Alice hast einen Ciphertext (oder sonstige Daten)
+3. Alice verschlüsselt den Hash mit ihrem private Key
+4. Alive versendet die Daten mitsamt Signatur
+5. Bob entschlüsselt den Hash mit Alice public Key
+6. Bob hasht die Daten und prüft den Hash
 
--wie kann man einen replay angriff verhindern?
 
--erkläre raid level 1 kurz und gib 1 Vorteil 1 Nachteil an 
+Wie kann man einen replay angriff verhindern?
+- Timestamp bei übertragung von Daten
 
--was ist dos Angriff?
 
--aus einem Text lesen um was es sich für eine maleware handelt (Wurm , Virus,…) 
+Erkläre RAID1 kurz und gib 1 Vorteil 1 Nachteil an
+- Schreibe gleichzeitig auf die Festplatten
+- Vorteile
+- Doppelte Lesegeschwindigkeit
+- Doppelte Verfügbarkeit
+- Nachteile
+- Doppelte Speicherkapazität notwendig
+- Keine Erhöhung der Schreibgeschwindigkeit
+
+Was ist DOS Angriff?
+- Denial of Service
+- Ziel: Schädigung der Verfügbarkeit eines Dienstes oder von Daten.
+
+Aus einem Text lesen um was es sich für eine maleware handelt (Wurm , Virus,…) 
 
 Dazu allgemeine Wissensfrage beantworten bsp: was muss der Mitarbeiter jetzt machen nachdem er den Virus entdeckt hat…. . 
 
--wieso ist es problematisch wenn man Sicherheitslücken/ backdoors absichtlich einbaut und dieses nicht veröffentlicht? 
+Wieso ist es problematisch wenn man Sicherheitslücken/ backdoors absichtlich einbaut und dieses nicht veröffentlicht? 
+- Entdeckung der Lücke durch Angreifer
+- Vertrauensbruch
 
--wirtschaftsspionage wie wird das durchgeführt bei Social Engineering , 2 bsp angeben. 
+Wirtschaftsspionage wie wird das durchgeführt bei Social Engineering , 2 bsp angeben. 
+- Phishing
+- Pretexting
 
--warum muss man kleine Unternehmen besonders schützen ? 
+Warum muss man kleine Unternehmen besonders schützen ? 
 Nenne 2 Gründe.
+- Begrenzte Ressourcen und Expertise 
+- Potentiell Katastrophe Folgen
