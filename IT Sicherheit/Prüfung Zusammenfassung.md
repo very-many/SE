@@ -19,11 +19,11 @@ Nenne 2 Beispiele zu kryptographischen Methoden
 - Asymmetrisch: RSA
 
 Wie ist ein Kryptosystem Definiert?
-- P: Plaintext
-- C: Ciphertext
-- K: Keyspace
-- enc: Verschlüsselungsalgo
-- dec: Entschlüsselungsalgo
+- **P**: *Plaintext*
+- **C**: *Ciphertext*
+- **K**: *Keyspace*
+- **enc**: *Verschlüsselungsalgo*
+- **dec**: *Entschlüsselungsalgo*
 
 Unterschied zwischen asymmtrischer und symmetrischer Verschlüsselung
 - **Schlüssel**: Symmetrische Verschlüsselung verwendet einen einzigen Schlüssel für beide Prozesse, während asymmetrische Verschlüsselung ein Schlüsselpaar (öffentlich und privat) verwendet.
@@ -47,9 +47,9 @@ Wenn nein dann nenne Alternative.
 
 Hashing, was ist eine hash Funktion und nenne 3 Eigenschaften davon. 
 - Eine hash Funktion transformiert ihre Eingabe in einen „Hash“ fester länge.
-- Deterministisch
-- Einwegsfunktion
-- Kollisionsresistent
+	- Deterministisch
+	- Einwegsfunktion
+	- Kollisionsresistent
 
 Was ist Kollisionsresistenz?
 - Es ist sehr schwer 2 Nachrichten zu finden, die den selben Hash aufweisen
