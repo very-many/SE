@@ -129,4 +129,96 @@ Pr[B\cap C]&= Pr[a]+Pr[e]\\
 &= 0,09+0,08\\
 &= 0,17
 \end{align*}$$
-- $Pr[C]$: $$Pr[C]=$$
+- $Pr[C]$: $$\begin{align*}
+Pr[C]&= Pr[a]+Pr[d]+Pr[e]+Pr[g]\\
+&= 0,09+0,10+0,08+0,01\\
+&= 0,28
+\end{align*}$$
+- $Pr[A\mid B]$: *(Multiplikationsgesetz der Wahrscheinlichkeit)*$$\begin{align*}
+Pr[A\cap B]&= Pr[A\mid B]\cdot Pr[B]\\
+Pr[A\mid B]&= \frac{Pr[A\cap B]}{Pr[B]}\\
+&= \frac{{P[a]+Pr[c]}}{{Pr[a]+Pr[b]+Pr[c]+Pr[e]}}\\
+&= \frac{0,09+0,13}{0,09+0,11+0,13+0,08}\\
+&= \frac{22}{41}
+\end{align*}$$
+- $Pr[B\mid \overline{C}]$: *(Multiplikationsgesetz der Wahrscheinlichkeit)*$$\begin{align*}
+Pr[B\cap\overline{C}]&= Pr[B\mid\overline{C}]\cdot Pr[\overline{C}]\\
+Pr[B\mid\overline{C}]&= \frac{Pr[B\cap \overline{C}]}{Pr[\overline{C}]}\\
+&= \frac{Pr[b]+Pr[c]}{Pr[b]+Pr[c]+Pr[f]}\\
+&= \frac{0,24}{0,72}\\
+&= \frac{1}{3}
+\end{align*}$$
+- $Pr[A\cup B\cup C]$: $$\begin{align*}
+Pr[A\cup B \cup C]&= Pr[a]+Pr[b]+Pr[c]+Pr[d]+Pr[e]+Pr[g]\\
+&= 1-Pr[f]\\
+&= 0,52
+\end{align*}$$
+# Bedingte Wahrscheinlichkeiten
+Gegeben sind die Ereignisse $A$, $B_{1}$, $B_{2}$ und $B_{3}$ mit folgenden Wahrscheinlichkeiten:
+
+| **$i$** | **$Pr[B_{i}]$** | **$Pr[A\mid B_{i}]$** |
+| ------- | --------------- | --------------------- |
+| **1**       | 0,38            | 0,3                   |
+| **2**       | 0,24            | 0,12                  |
+| **3**       | 0,38            | 0,01                  |
+Berechnen Sie folgende Wahrscheinlichkeiten:
+- $Pr[A]$: *(SdtW)*$$\begin{align*}
+Pr[A]&= Pr[A\mid B_{1}] \cdot Pr[B_{1}] + Pr[A\mid B_{2}] \cdot Pr[B_{2}] + Pr[A\mid B_{2}] \cdot Pr[B_{3}]\\
+&= 0,3\cdot0,38+0,12\cdot0,24+0,01\cdot0,38\\
+&= 0,1466
+\end{align*}$$
+- $Pr[B_{2}\mid A]$: *(Satz von Bayes)*$$\begin{align*}
+Pr[B_{2}\mid A]&= \frac{Pr[A\mid B_{2}]\cdot Pr[B_{2}]}{Pr[A]}\\
+&= \frac{0,12\cdot0,24}{0,1466}\\
+&= \frac{144}{733}
+\end{align*}$$
+# Erwartungswert/Varianz
+Die diskrete Zufallsvariable $X$ wird durch folgende Wertetabelle definiert:
+
+| **$k$** | **$Pr[X=k]$** |
+| ------- | ------------- |
+| **-5**  | 0,31          |
+| **-4**  | 0,07          |
+| **2**   | 0,07          |
+| **4**   | 0,08          |
+| **6**   | 0,03          |
+| **9**   | 0,02          |
+| **13**  | 0,36          |
+| **20**  | 0,06          |
+Berechnen Sie:
+- $Exp[X]$: $$\begin{align*}
+Exp[X]&= -5\cdot0,31+(-4)\cdot0,07+2\cdot0,07+4\cdot0,08+6\cdot0,03+9\cdot0,02+13\cdot0,36+20\cdot0,06\\
+&= 4,87
+\end{align*}$$
+- $Exp[X^{2}]$: $$\begin{align*}
+Exp[X^{2}]&= -5^{2}\cdot0,31+(-4)^{2}\cdot0,07+2^{2}\cdot0,07+4^{2}\cdot0,08+6^{2}\cdot0,03+9^{2}\cdot0,02+13^{2}\cdot0,36+20^{2}\cdot0,06\\
+&= 97,97
+\end{align*}$$
+- $Var[X]$: $$\begin{align*}
+Var[X]&= Exp[X^{2}]-Exp[X]^{2}\\
+&= 97,97-4,87^2\\
+&= 97,97-23,7169\\
+&= 74,2531
+\end{align*}$$
+# Standardnormalverteilung
+Gegeben ist eine normalverteilte Zufallsvariable $X$ mit dem Erwartungswert $\mu= -1$ und Varianz $\sigma ^{2}= 9$.  
+Berechnen Sie folgende Wahrscheinlichkeiten:
+- $Pr[X\leq9,54]$:$$\begin{align*}
+z&=\frac{x-\mu}{\sigma}\\
+&= \frac{9,54-(-1)}{\sqrt{9}}\\
+&= 3,51\overline{3}\\\\
+
+\rightarrow Pr[X\leq 9,54]&= 0,999784
+\end{align*}$$
+- $Pr[X\leq 9,62]$:$$\begin{align*}
+z&=\frac{x-\mu}{\sigma}\\
+&= \frac{9,62-(-1)}{\sqrt{9}}\\
+&= 3,54\\\\
+
+\rightarrow Pr[X\leq 9,62]&= 0,999800
+\end{align*}$$
+- $Pr[9,54\leq X\leq 9,62]$:$$\begin{align*}
+Pr[9,54\leq X\leq 9,62]&= Pr[X\leq9,62]-Pr[X\leq 9,54]\\
+&= 0,999800 - 0,000784\\
+&= 0,000016
+\end{align*}$$
