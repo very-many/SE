@@ -21,3 +21,11 @@ Pr[A\cap B]&= Pr[A]\cdot Pr[B]\\
 Pr[A]&= \frac{Pr[A\cap B]}{Pr[B]}
 \end{align*}$$
 - **Ungleichung von Markov** $$Pr[X\ge a]\le\frac{Exp[X]}{a}$$
+- **Chebyshev Ungleichung**$$Pr[|X-\mu|\ge k\sigma]\le \frac{1}{k^{2}}$$
+
+
+- Für eine stetig gleichverteilte Zufallsvariable $X$ gilt:
+
+1. Der Erwartungswert $Exp[X]$:$$Exp[X] = \frac{a + b}{2}​$$
+
+2. Die Varianz $\text{Var}[X]$:$$Var[X] = \frac{(b - a)^2}{12}$$
