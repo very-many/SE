@@ -31,3 +31,9 @@ Pr[A]&= \frac{Pr[A\cap B]}{Pr[B]}
 1. Der Erwartungswert $Exp[X]$:$$Exp[X] = \frac{a + b}{2}​$$
 
 2. Die Varianz $\text{Var}[X]$:$$Var[X] = \frac{(b - a)^2}{12}$$
+
+- **Geometrische Verteilung**
+- $Pr[X=k]=(1-p)^{k-1}\cdot p$
+- $Exp[X]=\frac{1}{p}$
+- $Var[X]=\frac{1-p}{p^{2}}$
+- 
