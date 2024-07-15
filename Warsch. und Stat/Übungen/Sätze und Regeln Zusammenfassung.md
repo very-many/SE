@@ -21,6 +21,9 @@ Pr[A]&= \frac{Pr[A\cap B]}{Pr[B]}
 \end{align*}$$
 - **Ungleichung von Markov** $$Pr[X\ge a]\le\frac{Exp[X]}{a}$$
 - **Chebyshev Ungleichung**$$Pr[|X-\mu|\ge k\sigma]\le \frac{1}{k^{2}}$$
+- **Siebformel**$$P r [ A ∪ B ∪ C ] = P r [ A ] + P r [ B ] + P r [ C ]
+−P r [ A ∩ B ] − P r [ A ∩ C ] − P r [ B ∩ C ]
++P r [ A ∩ B ∩ C ]$$
 
 
 - Für eine stetig gleichverteilte Zufallsvariable $X$ gilt:
