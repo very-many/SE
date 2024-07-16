@@ -20,7 +20,7 @@ Pr[A\cap B]&= Pr[A]\cdot Pr[B]\\
 Pr[A]&= \frac{Pr[A\cap B]}{Pr[B]}
 \end{align*}$$
 - **Ungleichung von Markov** $$Pr[X\ge a]\le\frac{Exp[X]}{a}$$
-- **Chebyshev Ungleichung**$$Pr[|X-\mu|\ge k\sigma]\le \frac{1}{k^{2}}$$
+- **Chebyshev Ungleichung**$$Pr[|X-\mu|\ge (k-\mu)]\le \frac{\sigma^{2}}{(k-\mu)^{2}}$$
 - **Siebformel**$$P r [ A ∪ B ∪ C ] = P r [ A ] + P r [ B ] + P r [ C ]
 −P r [ A ∩ B ] − P r [ A ∩ C ] − P r [ B ∩ C ]
 +P r [ A ∩ B ∩ C ]$$
@@ -33,7 +33,6 @@ Pr[A]&= \frac{Pr[A\cap B]}{Pr[B]}
 2. Die Varianz $\text{Var}[X]$:$$Var[X] = \frac{(b - a)^2}{12}$$
 
 - **Geometrische Verteilung**
-- $Pr[X=k]=(1-p)^{k-1}\cdot p$
-- $Exp[X]=\frac{1}{p}$
-- $Var[X]=\frac{1-p}{p^{2}}$
-- 
+	- $Pr[X=k]=(1-p)^{k-1}\cdot p$
+	- $Exp[X]=\frac{1}{p}$
+	- $Var[X]=\frac{1-p}{p^{2}}$
