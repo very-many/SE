@@ -506,6 +506,5 @@ Pr[B]&= Pr[B|A]\cdot Pr[A]+Pr[B|\overline A]\cdot Pr[\overline A] \text{ (SotW!)
 &= \frac{2}{5}\cdot \frac{1}{2}+ \frac{3}{5} \cdot \frac{1}{2}\\
 &= \frac{1}{2}
 \end{align*}$$
-
 ## %%16.04%%
 
