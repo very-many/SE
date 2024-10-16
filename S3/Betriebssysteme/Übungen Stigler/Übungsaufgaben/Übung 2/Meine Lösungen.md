@@ -1,14 +1,14 @@
 ## Aufgabe 1
-a) (unsicher ob alle oder nur ~/Uebungen mit chmod)
-``` sh
+**a)** 
+``` bash
 88490@in-bs:~$ mkdir -p Uebungen/Uebung2/Programme
 88490@in-bs:~$ chmod 700 Uebungen/Uebung2/Programme
 ```
-b)
+**b)**
 ``` sh
 88490@in-bs:~$ ln -s /usr/bin bin
 ```
-c)
+**c)**
 ``` sh
 88490@in-bs:~$ find bin/ -name "l*" -exec cp {} ~/Uebungen/Uebung2/Programme \;
 88490@in-bs:~$ find bin/ -name "z*" -exec cp {} ~/Uebungen/Uebung2/Programme \;
@@ -18,27 +18,27 @@ c)
 88490@in-bs:~$ find bin/ -executable -name "l*" -exec cp {} ~/Uebungen/Uebung2/Programme \;
 88490@in-bs:~$ find bin/ -executable -name "z*" -exec cp {} ~/Uebungen/Uebung2/Programme \;
 ```
-d)
+**d)**
 ``` sh
 88490@in-bs:~$ ls Uebungen/Uebung2/Programme/ >> Uebungen/Uebung2/index.txt
 88490@in-bs:~$ ls bin >> Uebungen/Uebung2/index2.txt
 ```
-e)
+**e)**
 ``` sh
 88490@in-bs:~$ cat Uebungen/Uebung2/index2.txt >> Uebungen/Uebung2/index.txt
 88490@in-bs:~$ sort Uebungen/Uebung2/index.txt | uniq >> index.sortiert.txt
 ```
-f)
+**f)**
 ``` sh
 88490@in-bs:~$ grep "ch" Uebungen/Uebung2/index2.txt
 ```
 
 ## Aufgabe 2
-a)
+**a)**
 ``` sh
 88490@in-bs:~$ umask 000
 ```
-b)
+**b)**
 ``` sh
 88490@in-bs:~$ mkdir abc
 88490@in-bs:~$ touch abc/x
@@ -47,11 +47,11 @@ b)
 88490@in-bs:~$ ln abc/x hard
 
 ```
-c)
+**c)**
 ``` sh
 88490@in-bs:~$ chmod +t abc/
 ```
-d)
+**d)**
 ``` sh
 88490@in-bs:~$ chmod 700 hard
 
@@ -60,7 +60,7 @@ d)
 # Nachher
 -rwx------
 ```
-e)
+**e)**
 ``` sh
 88490@in-bs:~$ echo "hello world" >> abc/x
 88490@in-bs:~$ rm abc/x
