@@ -1,55 +1,65 @@
 ``` Cpp
-#include <iostream>
-#include <string>
-using namespace std;
-
+// Vorzeichenlose ganze Zahl.
 using uint = unsigned int;
 
+// Verkettete Liste mit Elementen des Typs T.
 template <typename T>
-//Verkettete Liste von Zeicheketten
 struct List
 {
+    // Knoten einer solchen Liste.
     struct Node
     {
-        T elem;
-        Node* next;
+        T elem;     // Element.
+        Node *next; // Zeiger auf den nÃ¤chsten Knoten oder Nullzeiger.
 
-        Node (T e, Node* n) : elem(e), next(n) {}
+        // Initialisierung mit Element e und Verkettungszeiger n.
+        Node(T e, Node *n) : elem(e), next(n) {}
     };
 
-    Node* head;
+    // Zeiger auf den ersten Knoten oder Nullzeiger.
+    Node *head;
 
-    List () : head(nullptr) {}
+    // Initialisierung als leere Liste.
+    List() : head(nullptr) {}
 
-    void add (T x)
+    // Element x zur Liste hinzufÃ¼gen (und zwar am Anfang).
+    void add(T x)
     {
         head = new Node(x, head);
     }
 
-    // I-tes Element aus einer Liste finden
-    bool get (uint i, T &x)
+    // i-tes Element der Liste (gezÃ¤hlt ab 0) Ã¼ber den Referenz-
+    // parameter x zurÃ¼ckliefern, falls vorhanden.
+    // Resultatwert true genau dann, wenn es ein i-tes Element gibt.
+    bool get(uint i, T &x)
     {
-        Node* p = head;
-        while (i > 0 && p != nullptr)
+        for (Node *p = head; p; p = p->next, i--)
         {
-            p = p->next;
-            i--;
+            if (i == 0)
+            {
+                x = p->elem;
+                return true;
+            }
         }
-        if (p == nullptr) return false;
-        x = p->elem;
-        return true;;
+        return false;
     }
 
-    // Das erste Element x aus der Liste entfernen, falls vorhanden
-    bool remove (T x)
+    // Das erste Element x aus der Liste entfernen, falls vorhanden.
+    // Resultatwert true genau dann, wenn Element x vorhanden war.
+    // Bei Verwendung dieser Funktion muss es einen Operator == zum
+    // Vergleich zweier Objekte des Typs T geben. Bei Bedarf kann so
+    // ein Operator passend definiert werden, vgl. Â§ 1.4.9.
+    bool remove(T x)
     {
-        Node* q = nullptr;
-        for (Node* p = head; p != nullptr; q = p, p = p->next)
+        Node *q = nullptr;
+        for (Node *p = head; p; q = p, p = p->next)
         {
             if (p->elem == x)
             {
-                if (q != nullptr) q->next = p->next;
-                else head = p->next;
+                if (q)
+                    q->next = p->next;
+                else
+                    head = p->next;
                 delete p;
                 return true;
             }
@@ -58,19 +68,50 @@ struct List
     }
 };
 
-// ---------------------------------
+#include <iostream> // cin, cout, endl
+#include <string>   // string
+using namespace std;
 
-int main ()
+// Interaktives Testprogramm.
+int main()
 {
+    // Liste von Zeichenketten.
     List<string> ls;
-    ls.add("eins");
-    ls.add("zwei");
-    ls.add("drei");
 
-    string s;
-    if (ls.get(0, s)) cout << s << endl;
-    else cout << "Element nicht vorhanden"<< endl;
+    // Hilfsvariablen.
+    string cmd, elem;
 
-    ls.remove("zwei");
-};
+    // Befehle von der Standardeingabe lesen und verarbeiten:
+    // + elem -> elem zur Liste hinzufÃ¼gen
+    // ? i    -> i-tes Element der Liste ausgeben
+    // - elem -> elem aus der Liste entfernen
+    // q      -> Programm beenden
+
+    while (cout << "cmd: ", cin >> cmd)
+    {
+        if (cmd == "+")
+        {
+            cin >> elem;
+            ls.add(elem);
+        }
+        else if (cmd == "?")
+        {
+            uint i;
+            cin >> i;
+            if (ls.get(i, elem))
+                cout << elem;
+            cout << endl;
+        }
+        else if (cmd == "-")
+        {
+            cin >> elem;
+            ls.remove(elem);
+        }
+        else if (cmd == "q")
+        {
+            break;
+        }
+    }
+}
+
 ```
