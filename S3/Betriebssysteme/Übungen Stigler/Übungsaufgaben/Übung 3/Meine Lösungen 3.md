@@ -10,7 +10,7 @@
 88490@in-bs:~$ bash hallo
 Guten Morgen!
 
-88490@in-bs:~$ chmod 777 hallo
+88490@in-bs:~$ chmod +x hallo
 88490@in-bs:~$ ./hallo
 Guten Morgen!
 ```
@@ -89,7 +89,7 @@ cat $0
 Inhalt des Shellskripts:
 #!/bin/bash
 Verzeichnis=$1
-ls ${Verzeichnis:=~} | wc -l
+ls -1 ${Verzeichnis:=~} | wc -l
 echo: "Skript:"
 cat $0
 ```
