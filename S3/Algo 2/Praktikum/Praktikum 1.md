@@ -147,12 +147,37 @@ struct HashChain {
 		// for (uint i = 0; i < n; i++){
 			// a[i] = nullptr;
 		// }
-	}
+	};
 
 	bool put (K k, V v) {
 		uint i = hashval(k) % size;
 		Node* h = a[i];
 		...
 	}
-}
+};
+
+struct HashOpen {
+	enum Kind{
+		Regular, Empty, Deleted
+	};
+	struct Entry{
+		K key;
+		V val;
+		bool deleted; //Löschmarkierung
+
+		Entry () : kind(Empty) {}
+	};
+
+	Entry* a;
+	uint size;
+
+	// Konstruktor
+	bool put (K k, V v){
+		S s = S(k, size);
+		for (int j = 0; j < size; j++){
+			uint i = s.next():
+			... a[i].kind ...
+		}
+	}
+};
 ```
