@@ -1,2 +1,0 @@
-# Pearson Korrelations-Dings
-
