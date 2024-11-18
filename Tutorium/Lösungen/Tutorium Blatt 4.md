@@ -90,10 +90,10 @@ $$\begin{align*}
 \\
 \cdots\\
 \\
-\begin{pmatrix}4&6&14&36&\mid10 \\ 0&5&15&44&\mid5 \\ 0&0&4&18&\mid0\\0&0&0&\frac{3}{5}&\mid0\end{pmatrix}
+\begin{pmatrix}4&6&14&36&\mid10 \\ 0&5&15&44&\mid5 \\ 0&0&4&18&\mid0\\0&0&0&\frac{9}{5}&\mid0\end{pmatrix}
 \end{align*}$$
 $$\begin{align*}
-\frac{3}{5}a_{3}&= 0\\
+\frac{9}{5}a_{3}&= 0\\
 a_{3}&= 0\\
 \\
 4a_{2} + 18 \cdot 0 &= 0\\
