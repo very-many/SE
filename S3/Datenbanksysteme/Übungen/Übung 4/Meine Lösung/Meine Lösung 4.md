@@ -1,51 +1,51 @@
 ## Tabellen Erstellen
-``` SQL
+``` PostgreSQL
 CREATE TABLE JTh_Benutzer (
-    Benutzer_Nr INT PRIMARY KEY,
-    VName VARCHAR(50),
-    NName VARCHAR(50)
+    Benutzer_Nr SERIAL PRIMARY KEY,
+    VName VARCHAR(50) NOT NULL,
+    NName VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE JTh_Adresse (
-    Benutzer_Nr INT,
-    Plz CHAR(5),
-    Ort VARCHAR(100),
-    Str VARCHAR(100),
-    HausNr VARCHAR(10),
-    Adr_Typ VARCHAR(20),
+    Benutzer_Nr INT NOT NULL,
+    Plz CHAR(5) NOT NULL,
+    Ort VARCHAR(100) NOT NULL,
+    Str VARCHAR(100) NOT NULL,
+    HausNr VARCHAR(10) NOT NULL,
+    Adr_Typ VARCHAR(20) NOT NULL,
     PRIMARY KEY (Benutzer_Nr, Adr_Typ),
-    FOREIGN KEY (Benutzer_Nr) REFERENCES JTh_Benutzer(Benutzer_Nr)
+    FOREIGN KEY (Benutzer_Nr) REFERENCES JTh_Benutzer(Benutzer_Nr) ON DELETE CASCADE
 );
 
 CREATE TABLE JTh_Aufsatz (
-    Aufsatz_Id INT PRIMARY KEY,
-    Titel VARCHAR(200),
-    Zeitschriften_Id INT,
-    Jahrgang INT,
-    von_Seite INT,
-    bis_Seite INT,
-    Autor_Id INT,
-    FOREIGN KEY (Zeitschriften_Id) REFERENCES JMu_Zeitschrift(Zeitschriften_Id),
-    FOREIGN KEY (Autor_Id) REFERENCES JTh_Autor(Autor_Id)
+    Aufsatz_Id SERIAL PRIMARY KEY,
+    Titel VARCHAR(200) NOT NULL,
+    Zeitschriften_Id INT NOT NULL,
+    Jahrgang INT NOT NULL,
+    von_Seite INT NOT NULL,
+    bis_Seite INT NOT NULL,
+    Autor_Id INT NOT NULL,
+    FOREIGN KEY (Zeitschriften_Id) REFERENCES JMu_Zeitschrift(Zeitschriften_Id) ON DELETE CASCADE,
+    FOREIGN KEY (Autor_Id) REFERENCES JTh_Autor(Autor_Id) ON DELETE CASCADE
 );
 
 CREATE TABLE JTh_Autor (
     Autor_Id INT PRIMARY KEY,
-    AName VARCHAR(100)
+    AName VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE JTh_Zeitschrift (
     Zeitschriften_Id INT PRIMARY KEY,
-    ZName VARCHAR(200)
+    ZName VARCHAR(200) NOT NULL
 );
 
 CREATE TABLE JTh_bestellt (
-    Benutzer_Nr INT,
-    Aufsatz_Id INT,
-    Bestelldatum DATE,
+    Benutzer_Nr INT NOT NULL,
+    Aufsatz_Id INT NOT NULL,
+    Bestelldatum DATE NOT NULL,
     PRIMARY KEY (Benutzer_Nr, Aufsatz_Id, Bestelldatum),
-    FOREIGN KEY (Benutzer_Nr) REFERENCES JTh_Benutzer(Benutzer_Nr),
-    FOREIGN KEY (Aufsatz_Id) REFERENCES JTh_Aufsatz(Aufsatz_Id)
+    FOREIGN KEY (Benutzer_Nr) REFERENCES JTh_Benutzer(Benutzer_Nr) ON DELETE CASCADE,
+    FOREIGN KEY (Aufsatz_Id) REFERENCES JTh_Aufsatz(Aufsatz_Id) ON DELETE CASCADE
 );
 ```
 
