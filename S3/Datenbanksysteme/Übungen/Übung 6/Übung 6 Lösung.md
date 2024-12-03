@@ -115,4 +115,3 @@ WHERE
     OR Z.ZName LIKE '%Datenbank%' OR Z.ZName LIKE '%Database%';
 ```
 
-
