@@ -114,3 +114,5 @@ WHERE
     AU.Titel LIKE '%Datenbank%' OR AU.Titel LIKE '%Database%'
     OR Z.ZName LIKE '%Datenbank%' OR Z.ZName LIKE '%Database%';
 ```
+
+
