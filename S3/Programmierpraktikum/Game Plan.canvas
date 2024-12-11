@@ -1,13 +1,13 @@
 {
 	"nodes":[
 		{"id":"98adcfde74e8a118","type":"text","text":"# LoadGamePopup\n![[Pasted image 20241206180232.png]]","x":40,"y":-867,"width":625,"height":434,"color":"4"},
-		{"id":"5dae29494d856a3c","type":"text","text":"# DeletePopup\n![[Pasted image 20241206184257.png]]","x":40,"y":-360,"width":625,"height":430,"color":"4"},
-		{"id":"d23e94c94efbe58b","type":"text","text":"# WaitForJoinPopup\n![[Pasted image 20241206184415.png]]","x":40,"y":160,"width":625,"height":441,"color":"4"},
+		{"id":"5dae29494d856a3c","type":"text","text":"# DeletePopup\n![[Pasted image 20241206184257.png]]![[Pasted image 20241209204433.png]]","x":40,"y":-360,"width":1200,"height":430,"color":"4"},
+		{"id":"d23e94c94efbe58b","type":"text","text":"# WaitForJoinPopup\n![[Pasted image 20241206184415.png]]![[Pasted image 20241209210022.png]]","x":40,"y":160,"width":1200,"height":441,"color":"4"},
 		{"id":"ffb9f175f8554c0c","type":"text","text":"# EndPopup\nMaybe ändern in eine Stat view\n\n![[Pasted image 20241206184459.png]]","x":40,"y":700,"width":625,"height":500,"color":"4"},
-		{"id":"e31b4298e6d8d749","type":"text","text":"## WaitingPopup\n![[Pasted image 20241206184436.png]]","x":40,"y":1280,"width":625,"height":451,"color":"4"},
-		{"id":"6d7b808f6f50fe49","type":"text","text":"# JoinPopup\n![[Pasted image 20241206185224.png]]","x":40,"y":1800,"width":625,"height":430,"color":"4"},
+		{"id":"e31b4298e6d8d749","type":"text","text":"## WaitingPopup\n![[Pasted image 20241206184436.png]]![[Pasted image 20241209210149.png]]","x":40,"y":1280,"width":1200,"height":451,"color":"4"},
+		{"id":"6d7b808f6f50fe49","type":"text","text":"# JoinPopup\n![[Pasted image 20241206185224.png]]![[Pasted image 20241209205107.png]]","x":40,"y":1800,"width":1200,"height":430,"color":"4"},
 		{"id":"59f232bab182d623","type":"text","text":"# GameSettings\n![[Pasted image 20241206175947.png]]![[Pasted image 20241208200753.png]]\n\n![[Pasted image 20241206184333.png]]","x":-1505,"y":126,"width":1250,"height":440,"color":"5"},
-		{"id":"5ca520d757424ba5","type":"text","text":"# MultiplayerView\n![[Pasted image 20241206185010.png]]","x":-880,"y":1132,"width":625,"height":444,"color":"5"},
+		{"id":"5ca520d757424ba5","type":"text","text":"# MultiplayerView\n![[Pasted image 20241206185010.png]]![[Pasted image 20241209203223.png]]","x":-1505,"y":1132,"width":1250,"height":444,"color":"5"},
 		{"id":"7afc6c0592d036e4","type":"text","text":"# GameRunningView\n![[Pasted image 20241206174309.png]]","x":-880,"y":-374,"width":625,"height":430,"color":"5"},
 		{"id":"206907a05017fe04","type":"text","text":"# ShipPlacement\n![[Pasted image 20241206175018.png]]","x":-880,"y":-894,"width":625,"height":440,"color":"5"},
 		{"id":"d4f8628c62e9cc5f","type":"text","text":"# MainMenu\n![[Pasted image 20241206173731.png]]\n\n","x":-880,"y":-1374,"width":625,"height":440,"color":"5"},
@@ -16,7 +16,7 @@
 		{"id":"fe15b03e98c84118","type":"text","text":"# AllUiElements\n![[Pasted image 20241206173902.png]]\n","x":-520,"y":-3080,"width":1120,"height":1075,"color":"6"},
 		{"id":"a320eb1e21cf6442","type":"file","file":"S3/Programmierpraktikum/click-dummy.pdf","subpath":"#page=4","x":-2680,"y":-1974,"width":987,"height":600,"color":"1"},
 		{"id":"da93b787218c35fa","type":"text","text":"# SettingsMenuView\n![[Pasted image 20241206184647.png]]\n![[Pasted image 20241207145002.png]]\n","x":-1505,"y":640,"width":1250,"height":434,"color":"5"},
-		{"id":"f44d5f209f806691","type":"text","text":"# SavePopup\n\n![[Pasted image 20241206180144.png]]\n","x":40,"y":-1368,"width":625,"height":434,"color":"4"}
+		{"id":"f44d5f209f806691","type":"text","text":"# SavePopup\n\n![[Pasted image 20241206180144.png]]![[Pasted image 20241209203254.png]]\n","x":40,"y":-1368,"width":1200,"height":434,"color":"4"}
 	],
 	"edges":[
 		{"id":"ca0cfd691e9cc58e","fromNode":"7afc6c0592d036e4","fromSide":"right","toNode":"f44d5f209f806691","toSide":"left"},
