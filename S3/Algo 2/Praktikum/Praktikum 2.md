@@ -22,44 +22,44 @@ struct BinHeap {
     // verweist node auf den zugehÃ¶rigen Knoten eines Binomialbaums
     // dieser Halde; andernfalls ist node ein Nullzeiger.
     struct Entry {
-	// PrioritÃ¤t, zusÃ¤tzliche Daten und zugehÃ¶riger Knoten.
-	P prio;
-	D data;
-	Node* node;
-
-	// Initialisierung mit PrioritÃ¤t p und zusÃ¤tzlichen Daten d.
-	Entry (P p, D d) : prio(p), data(d), node(nullptr) {}
-    };
-
-    // Knoten eines Binomialbaums innerhalb einer solchen Halde.
-    // Neben den eigentlichen Knotendaten (degree, parent, child,
-    // sibling), enthÃ¤lt der Knoten einen Verweis auf den zugehÃ¶rigen
-    // Eintrag.
-    struct Node {
-	// ZugehÃ¶riger Eintrag.
-	Entry* entry;
-
-	// Grad des Knotens.
-	uint degree;
-
-	// VorgÃ¤nger (falls vorhanden; Nullzeiger bei einem Wurzelknoten).
-	Node* parent;
-
-	// Nachfolger mit dem grÃ¶ÃŸten Grad
-	// (falls vorhanden; Nullzeiger bei einem Blattknoten).
-	Node* child;
-
-	// ZirkulÃ¤re Verkettung aller Nachfolger eines Knotens
-	// bzw. einfache Verkettung aller Wurzelknoten einer Halde,
-	// jeweils sortiert nach aufsteigendem Grad.
-	Node* sibling;
-
-	// Initialisierung als Wurzelknoten mit Grad 0 und Eintrag e,
-	// der dann auf diesen Knoten zurÃ¼ckverweist.
-	Node (Entry* e) : entry(e), degree(0),
-		parent(nullptr), child(nullptr), sibling(nullptr) {
-	    e->node = this;
-	}
+		// PrioritÃ¤t, zusÃ¤tzliche Daten und zugehÃ¶riger Knoten.
+		P prio;
+		D data;
+		Node* node;
+	
+		// Initialisierung mit PrioritÃ¤t p und zusÃ¤tzlichen Daten d.
+		Entry (P p, D d) : prio(p), data(d), node(nullptr) {}
+	    };
+	
+	    // Knoten eines Binomialbaums innerhalb einer solchen Halde.
+	    // Neben den eigentlichen Knotendaten (degree, parent, child,
+	    // sibling), enthÃ¤lt der Knoten einen Verweis auf den zugehÃ¶rigen
+	    // Eintrag.
+	    struct Node {
+		// ZugehÃ¶riger Eintrag.
+		Entry* entry;
+	
+		// Grad des Knotens.
+		uint degree;
+	
+		// VorgÃ¤nger (falls vorhanden; Nullzeiger bei einem Wurzelknoten).
+		Node* parent;
+	
+		// Nachfolger mit dem grÃ¶ÃŸten Grad
+		// (falls vorhanden; Nullzeiger bei einem Blattknoten).
+		Node* child;
+	
+		// ZirkulÃ¤re Verkettung aller Nachfolger eines Knotens
+		// bzw. einfache Verkettung aller Wurzelknoten einer Halde,
+		// jeweils sortiert nach aufsteigendem Grad.
+		Node* sibling;
+	
+		// Initialisierung als Wurzelknoten mit Grad 0 und Eintrag e,
+		// der dann auf diesen Knoten zurÃ¼ckverweist.
+		Node (Entry* e) : entry(e), degree(0),
+			parent(nullptr), child(nullptr), sibling(nullptr) {
+		    e->node = this;
+		}
     };
 
     // Anfang der Wurzelliste (Nullzeiger bei einer leeren Halde).
