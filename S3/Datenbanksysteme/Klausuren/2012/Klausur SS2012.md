@@ -21,4 +21,7 @@ kauft = (Einkauf x Produkt, {Anzahl: Zahl})
 macht = (Kunde x Einkauf)
 in = (Einkauf x Filiale)
 
- 
+**ERM** ![[S3/Datenbanksysteme/Klausuren/2012/Drawing 2025-01-20 09.25.00.excalidraw]]
+
+
+
