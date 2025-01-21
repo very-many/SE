@@ -1,9 +1,9 @@
-## Aufgabe 1.1
+## Aufgabe 1.1 ERM
 
 **Entitys:**
 Kette = ({**KID: Zahl**, Name: Text})
 Filiale = ({**FID: Zahl**, Straße: Text})
-Stadt = ({**SID: Zahl**, Kategorie: {Kleinstadt, Mittelstadt, Großstadt, Metropole}})
+Stadt = ({**SID: Zahl**, Name: Text, Kategorie: {Kleinstadt, Mittelstadt, Großstadt, Metropole}})
 
 Produkt = ({**PID: Zahl**, Bezeichnung: Text, Preis: FKZ})
 Lebensmittel = ({MHD: Datum}) IS-A-Produkt
@@ -20,8 +20,11 @@ bietet = (Kette x Produkt)
 kauft = (Einkauf x Produkt, {Anzahl: Zahl})
 macht = (Kunde x Einkauf)
 in = (Einkauf x Filiale)
+IS-A-Produkt = (Lebensmittel x Produkt)
+IS-A-Produkt = (Elektroartikel x Produkt)
 
 **ERM:** ![[S3/Datenbanksysteme/Klausuren/2012/Drawing 2025-01-20 09.25.00.excalidraw]]
+
 **Kardinalitäten:**
 
 | gehört_zu | (1, 1)                                              | (0, N)                                                                                                                      |
@@ -47,22 +50,26 @@ Eine konkrete Beziehung des Typs *bietet* zwischen einem Entity $e_{1}$ des Typs
 
 Eine konkrete Beziehung des Typs *kauft* zwischen einem Entity $e_{1}$ des Typs *Einkauf* und einem Entity $e_{2}$ des Typs *Produkt* bedeutet dass: im Einkauf $e_{1}$ Produkt $e_{2}$ gekauft wurde.
 
+Eine konkrete Beziehung des Typs *IS_A_Produkt* zwischen einem Entity $e_{1}$ des Typs *Lebensmittel* und einem Entity $e_{2}$ des Typs *Produkt* bedeutet dass: Ein Lebensmittel $e_{1}$ ein Produkt $e_{2}$ ist.
+
+Eine konkrete Beziehung des Typs *IS_A_Produkt* zwischen einem Entity $e_{1}$ des Typs *Elektroartikel* und einem Entity $e_{2}$ des Typs *Produkt* bedeutet dass: Ein Elektroartikel $e_{1}$ ein Produkt $e_{2}$ ist.
+
 Eine konkrete Beziehung des Typs *macht* zwischen einem Entity $e_{1}$ des Typs *Kunde* und einem Entity $e_{2}$ des Typs *Einkauf* bedeutet dass: Kunde $e_{1}$ den Einkauf $e_{2}$ gemacht/getätigt hat.
 
 ## Aufgabe 1.2 Relationenschemata
 
 **Entitys:**
 Kette = ({**KID: Zahl**, Name: Text})
-Filiale = ({**FID: Zahl**, Straße: Text})
-Stadt = ({**SID: Zahl**, Kategorie: {Kleinstadt, Mittelstadt, Großstadt, Metropole}})
+Filiale = ({**FID: Zahl**, Straße: Text, *KID: Zahl*, *SID: Zahl*})
+Stadt = ({**SID: Zahl**, Name: Text, Kategorie: {Kleinstadt, Mittelstadt, Großstadt, Metropole}})
 
 Produkt = ({**PID: Zahl**, Bezeichnung: Text, Preis: FKZ})
-Lebensmittel = ({MHD: Datum}) IS-A-Produkt
-Elektroartikel = ({CE: Boolean, Prüfer: Text}) IS-A-Produkt
+Lebensmittel = ({***PID: Zahl***, MHD: Datum})
+Elektroartikel = ({***PID: Zahl***, CE: Boolean, Prüfer: Text})
 
 Kunde = ({**Code: Text**, Name: Text, Adresse: (plz: Text, str: Text, hnr: Text)})
 
-Einkauf = ({**EID: Zahl**, Zeitpunkt: Datum})
+Einkauf = ({**EID: Zahl**, Zeitpunkt: Datum, *FID: Zahl*, *Code: Text*})
 
 **Beziehungen:**
 gehört_zu = in Filiale
@@ -71,3 +78,40 @@ bietet = ({***KID: Zahl, PID: Zahl***})
 kauft = ({***EID: Zahl, PID: Zahl***, Anzahl: Zahl})
 macht = in Einkauf
 in = in Einkauf
+IS-A-Produkt = in den spezifischen Produkttypen
+
+**Fremdschlüssel-Abhängigkeiten:**
+$Lebensmittel|_{PID} \subseteq Produkt|_{PID}$
+$Elektroartikel|_{PID} \subseteq Produkt|_{PID}$
+$bietet|_{PID} \subseteq Produkt|_{PID}$
+
+## Aufgabe 2 SQL
+
+In welchen Städten gibt es eine Filiale der Kette gut&günstig?
+``` SQL
+SELECT s.Name
+FROM Filiale f
+JOIN Kette k ON f.KID = k.KID
+JOIN Stadt s ON f.SID = s.SID
+WHERE k.Name = "gut&günstig"
+```
+
+Wie viele Filialen gibt es in Stuttgart?
+``` SQL
+SELECT COUNT(f.SID)
+FROM Filiale f
+JOIN Stadt s ON f.SID = s.SID
+WHERE s.Name = "Stuttgart"
+```
+
+Wie viele Einkäufe enthielten ein Produkt, dessen Mindesthaltbarkeit zum Zeitpunkt des Einkaufs bereits abgelaufen war.
+``` SQL
+SELECT COUNT(e.EID)
+FROM Einkauf e
+JOIN kauft k ON e.EID = k.EID
+JOIN Lebensmittel l ON k.PID = l.PID
+WHERE l.MHD != NULL 
+AND l.MHD < e.Zeitpunkt
+```
+
+Erzeugen Sie eine Liste aller Einkäufe, die in einer bestimmten Filiale getätigt wurden. Geben Sie dabei für jeden Einkauf die Anzahl der gekauften Produkte und den Gesamtwert des Einkaufs an. Rabatte sollen nicht berücksichtigt werden.
