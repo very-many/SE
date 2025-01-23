@@ -93,7 +93,7 @@ SELECT s.Name
 FROM Filiale f
 JOIN Kette k ON f.KID = k.KID
 JOIN Stadt s ON f.SID = s.SID
-WHERE k.Name = "gut&günstig"
+WHERE k.Name = "gut&günstig";
 ```
 
 Wie viele Filialen gibt es in Stuttgart?
@@ -101,7 +101,7 @@ Wie viele Filialen gibt es in Stuttgart?
 SELECT COUNT(f.SID)
 FROM Filiale f
 JOIN Stadt s ON f.SID = s.SID
-WHERE s.Name = "Stuttgart"
+WHERE s.Name = "Stuttgart";
 ```
 
 Wie viele Einkäufe enthielten ein Produkt, dessen Mindesthaltbarkeit zum Zeitpunkt des Einkaufs bereits abgelaufen war.
@@ -111,7 +111,19 @@ FROM Einkauf e
 JOIN kauft k ON e.EID = k.EID
 JOIN Lebensmittel l ON k.PID = l.PID
 WHERE l.MHD != NULL 
-AND l.MHD < e.Zeitpunkt
+AND l.MHD < e.Zeitpunkt;
 ```
 
 Erzeugen Sie eine Liste aller Einkäufe, die in einer bestimmten Filiale getätigt wurden. Geben Sie dabei für jeden Einkauf die Anzahl der gekauften Produkte und den Gesamtwert des Einkaufs an. Rabatte sollen nicht berücksichtigt werden.
+```SQL
+SELECT 
+    E.EID AS EinkaufID,
+    COUNT(K.PID) AS AnzahlProdukte,
+    SUM(K.Anzahl * P.Preis) AS Gesamtwert
+FROM Einkauf E
+JOIN kauft K ON E.EID = K.EID
+JOIN Produkt P ON K.PID = P.PID
+WHERE E.FID = <FID>
+GROUP BY E.EID
+ORDER BY E.EID;
+```
