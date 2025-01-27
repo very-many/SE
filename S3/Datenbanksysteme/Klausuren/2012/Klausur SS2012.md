@@ -127,3 +127,51 @@ WHERE E.FID = <FID>
 GROUP BY E.EID
 ORDER BY E.EID;
 ```
+
+Geben Sie Filialen an, die Elektroartikel führen.
+```SQL
+SELECT F.FID
+FROM Filiale F
+JOIN bietet B ON F.KID = B.KID
+JOIN Elektroartikel E ON E.PID = P.PID
+```
+
+Geben Sie Filialen an, die keine Elektroartikel führen.
+```SQL
+SELECT DISTINCT F.FID, F.Straße
+FROM Filiale F
+WHERE F.FID NOT IN (
+    SELECT DISTINCT F1.FID
+    FROM Filiale F1
+    JOIN bietet B ON F1.KID = B.KID
+    JOIN Elektroartikel E ON B.PID = E.PID
+);
+
+-- oder:
+
+SELECT DISTINCT F.FID, F.Straße
+FROM Filiale F
+LEFT JOIN bietet B ON F.KID = B.KID
+LEFT JOIN Elektroartikel E ON B.PID = E.PID
+WHERE E.PID IS NULL;
+```
+
+
+## Aufgabe 3 DB-Theorie
+
+Gehen Sie vom Relationenschema $U = (\{a, b, c, d, e, g, h\}, F)$ mit der FD-Menge $F = { (a, b, g → d), (b, c → d, e, g), (c, e → b, g), (g → a) }$ aus.
+
+**1)**
+Bestimmen Sie alle Schlüssel für U
+> $h$ taucht garnicht auf?! somit kein Schlüssel?!
+
+-  $c$ muss teil vom Schlüssel sein (Taucht nur links auf)
+- $a,b,e,f,g$ können Teil vom Schlüssel sein (Tauchen links und rechts auf) 
+- $d$ kann nicht teil vom Schlüssel sein (Taucht nur rechts auf)
+
+Testen der einelementigen Mengen:
+-
+Testen der zweielementigen Mengen:
+$b, c = a,b,c,d,e,g$ !!
+
+
