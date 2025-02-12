@@ -23,7 +23,7 @@ in = (Einkauf x Filiale)
 IS-A-Produkt = (Lebensmittel x Produkt)
 IS-A-Produkt = (Elektroartikel x Produkt)
 
-**ERM:** ![[S3/Datenbanksysteme/Klausuren/2012/Drawing 2025-01-20 09.25.00.excalidraw]]
+**ERM:** ![[Drawing 2025-01-20 09.25.00.excalidraw]]
 
 **Kardinalitäten:**
 
@@ -156,6 +156,29 @@ LEFT JOIN Elektroartikel E ON B.PID = E.PID
 WHERE E.PID IS NULL;
 ```
 
+Nennen Sie die Bezeichnung(en) des oder der Elektroartikel mit dem höchsten Preis.
+```SQL
+SELECT P.Bezeichnung
+FROM Produkt P
+NATURAL JOIN Elektroartikel E ON P.PID = E.PID
+WHERE P.Preis =  (
+	SELECT MAX(Preis)
+	FROM Produkt P2
+	NATURAL JOIN Elektroartikel E2 ON P2.PIOD = E2.PID 
+);
+```
+
+Welche Kunden haben in Filialen aus mehr als einer Stadt eingekauft?
+```SQL
+SELECT K.Code
+FROM Kunde K
+NATURAL JOIN Elektroartikel E ON P.PID = E.PID
+WHERE P.Preis =  (
+	SELECT MAX(Preis)
+	FROM Produkt p2
+	NATURAL JOIN Elektroartikel E2 ON P2.PIOD = E2.PID 
+);
+```
 
 ## Aufgabe 3 DB-Theorie
 
@@ -163,15 +186,74 @@ Gehen Sie vom Relationenschema $U = (\{a, b, c, d, e, g, h\}, F)$ mit der FD-Men
 
 **1)**
 Bestimmen Sie alle Schlüssel für U
-> $h$ taucht garnicht auf?! somit kein Schlüssel?!
 
+- $h$ muss teil vom Schlüssel sein (Taucht garnicht auf)
 -  $c$ muss teil vom Schlüssel sein (Taucht nur links auf)
 - $a,b,e,f,g$ können Teil vom Schlüssel sein (Tauchen links und rechts auf) 
 - $d$ kann nicht teil vom Schlüssel sein (Taucht nur rechts auf)
 
 Testen der einelementigen Mengen:
--
+- -
 Testen der zweielementigen Mengen:
-$b, c = a,b,c,d,e,g$ !!
+- $gh$ -> $agh$
+Testen der dreielementigen Mengen:
+- **$bch$ -> $abcdegh$**
+- **$ceh$ -> $abcdegh$**
+Testen der vierelementigen Mengen (Die nicht noch nicht kandidaten enthalten)
+- $abgh$ -> $abdgh$
 
+**Schlüssel:** $bch$, $ceh$
 
+**2)**
+### Zusammenfassung der Normalformen
+1. **1NF:** Alle Attribute sind atomar.
+2. **2NF:** Keine partiellen Abhängigkeiten (kein Nicht-Schlüsselattribut hängt von einer echten Teilmenge des Schlüssels ab).
+3. **3NF:** Keine transitiven Abhängigkeiten (kein Nicht-Schlüsselattribut hängt von einem anderen Nicht-Schlüsselattribut ab).
+4. **BCNF:** Alle Abhängigkeiten haben einen Superschlüssel auf der linken Seite.
+
+### Beispiel zur Veranschaulichung
+Gegeben sei das Relationenschema R={A,B,C,D} mit den Abhängigkeiten:
+- A→B
+- B→C
+- C→D
+
+1. **1NF:** Das Schema ist in 1NF, da alle Attribute atomar sind.    
+2. **2NF:** Wenn A der Schlüsselkandidat ist, gibt es keine partiellen Abhängigkeiten. Das Schema ist in 2NF.    
+3. **3NF:** Es gibt eine transitive Abhängigkeit A→B→C→D. Das Schema ist **nicht in 3NF**.    
+4. **BCNF:** Da B→C und C→D Abhängigkeiten sind, bei denen B und C keine Superschlüssel sind, ist das Schema **nicht in BCNF**.
+---
+
+Bestimmen Sie die höchste Normalform in der U ist.
+- 1NF yes
+- 2NF yes
+- 3NF no
+- BCNF no
+
+**3)**
+$F = { (a, b, g → d), (b, c → d, e, g), (c, e → b, g), (g → a) }$
+
+**Dekonstruktion:**
+$F = { (a, b, g → d), (b, c → d), (b, c → e), (b, c → g), (c, e → b), (c, e → g), (g → a) }$
+
+**Linksreduktion:**
+abg -> d: bg -> d wegen g -> a, abg -> d
+bc -> d: x
+bc -> e: x
+bc -> g: x
+ce -> b: x
+ce -> g: x
+
+**Rechtsreduktion:**
+bg -> d: x
+bc -> d: Raus weil bc -> e, ce -> g, bg -> d
+bc -> e: x
+bc -> g: Raus weil bc -> e, ce -> g
+ce -> b: x
+ce -> g: x
+g -> a: x
+
+**Zusammenfassung:**
+$F = { (b, g → d), (b, c → e), (c, e → b, g), (g → a) }$
+
+## Kanon Normal Bsp:
+![[S3/Datenbanksysteme/Vorlesung/Drawing 2024-12-12 15.57.31.excalidraw|x700]]
