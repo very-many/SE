@@ -1,10 +1,18 @@
+# **Vorwort**
+Ich hab die scheiße damals mega messy geschrieben. Ist alles ziemlich unvollständig und zwischendrin fehlen immer wieder dinge. (sori)
+Tbh. hat mir zumindest die ganze Vorlesung aber auch nicht geholfen.
+
+GitHub rendert QuickLaTex teilw. nicht richtig, deswegen schaut euch das lieber über Obsidian an.
+
+Falls wer von iwem eine bessere Version hat oder irgendwas nützliches -> Ich füge es hier gerne hinzu.
+
 ## %%12.03%%
 **BUCH:** Stochastik für Einsteiger - Norbert Henze (?) - Kap. 7, 8, 9 (KOMBINATORIK)
 
 ***
 # Diskrete Wahrscheinlichkeitsräume
 
-Wahrscheinlichkeit == W'keit (Weil kürzer)
+*Wahrscheinlichkeit == W'keit (Weil kürzer)*
 
 **Bsp. Lotto "6 aus 49"**
 
@@ -54,7 +62,7 @@ Der Aktuell laufende Prozess ist mit einer W'keit von 0,7 ein datenlastiger Proz
 
 **Frage:** Wie hoch ist die W'keit, dass die nächste ausgeführte Operation eine I/O-Operation ist?
 $$\Omega \{rl,dl\} x \{io, cpu\}$$
-[[Draw - Baumdiagramm]]
+![[S2/Warsch. und Stat/Draw - Baumdiagramm]]
 
 | w         | Pr[w]                |
 | --------- | -------------------- |
@@ -133,7 +141,7 @@ $$Pr[A\cup B]=\sum\limits_{w\in A\cup B}$$
 ## Satz 2.3 Siebformel
 **Beweis:**
 Seien $A,B\in \Omega$
-[[Draw- A schnitt B]]
+![[S2/Warsch. und Stat/Draw- A schnitt B]]
 $$Pr[A\cup B] = Pr[A]+Pr[B]-Pr[A\cup B]$$
 	Für $w \in A\cup B$ wurde $Pr[w]$ doppelt addiert
 
@@ -147,7 +155,7 @@ $= Pr[A]+Pr[B]-Pr[A\cap B]$
 ---
 
 $A,B,C\in\Omega$
-[[Draw - schnitt A, B, C]]
+![[S2/Warsch. und Stat/Draw - schnitt A, B, C]]
 $$\begin{align}
 Pr[A\cup B\cup C]=&Pr[A]+Pr[B]+Pr[C] \\
 &-Pr[A\cap B] -Pr[A\cap C]-Pr[B\cap C]\\
