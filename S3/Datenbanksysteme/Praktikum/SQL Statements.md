@@ -151,3 +151,44 @@ INSERT INTO g03_Warteschlange (SID, KID, Position) VALUES
 (1, 4, 2),
 (2, 5, 1);
 ```
+
+# **X** Query
+```SQL
+SELECT COUNT(*) as total, COUNT(fax) as ext, COUNT(*)-COUNT(fax) as int
+	FROM g03_Referent as a 
+	LEFT JOIN g03_ExtReferent USING(RefID)
+
+
+SELECT DISTINCT SID, COUNT(TID)
+FROM g03_Seminar JOIN g03_Termin USING(SID)
+GROUP BY SID
+ORDER BY SID
+
+
+SELECT DISTINCT SID, COUNT(SID)
+FROM g03_Seminar JOIN g03_Buchung USING(SID)
+WHERE zustand = 'bezahlt'
+GROUP BY SID
+ORDER BY SID
+
+
+SELECT SID, COUNT(KID) as groesse_warteschlange
+FROM g03_Seminar JOIN g03_Warteschlange USING(SID)
+GROUP BY SID
+HAVING COUNT(KID) >= All(
+	SELECT COUNT(KID)
+	FROM g03_Warteschlange
+	GROUP BY KID)
+
+
+SELECT RefID, COUNT(kid) as Verantw_Teilnehmer
+FROM g03_Referent re LEFT JOIN g03_SeminarThema st ON (re.RefID = st.verantwortlicher)
+	LEFT JOIN (g03_Seminar se JOIN g03_Buchung be ON se.SID = be.SID AND zustand = 'bezahlt') USING(STID)
+GROUP BY RefID
+
+
+SELECT RefID, SUM((1 - be.rabatt/100) * st.preis) as money
+FROM g03_Referent re LEFT JOIN g03_SeminarThema st ON (re.RefID = st.verantwortlicher)
+	LEFT JOIN (g03_Seminar se JOIN g03_Buchung be ON se.SID = be.SID AND zustand = 'bezahlt') USING(STID)
+GROUP BY RefID
+```
